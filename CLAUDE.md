@@ -38,5 +38,13 @@ Egyptian sarcastic-slogan apparel brand. Shopify store + catalogue scripts + gro
 - **Meta Ads connector is connected** (claude.ai connector "Meta Ads"). Ad account in use: "Business Monkeys - Mockers Insights" (3483104991977055, EGP). Other two accounts (21584166, The Monkey Temple) had no spend.
 - **Root cause of the order drop (Meta, 26 Nov):** best campaign "10/26/2026" (5,337 EGP spend, 13 pixel purchases, ~410 EGP/purchase) was switched off on 12 Nov. Replacements (11/12 sales, 15 Nov Awareness/Engagement/Catalog, 19 Nov "Mac Comedian") spent ~3,850 EGP with 0 purchases; awareness/engagement bought cheap junk clicks. Since 24 Nov nothing delivers: "Mac Comedian" is ACTIVE but blocked by `account_spend_limit_reached` (raise in Meta Billing settings).
 
+## Brand & audience (owner, 26 Nov 2026)
+- Audience 25-45; witty, well-read, pop-culture literate (movies, series, music, politics, memes, books). Design IS the product: ads/images must show the print large and readable.
+- Value: quality high for the price. Inspirations: Threadless, TeePublic. Local competitors whose audience we want: inyourshoe.com, kaicollections.com, theinkjection.com (and similar).
+- In stock to sell: hoodies, sweatshirts, regular tees, oversized tees (heavy + light-soft), bucket hats, duffle bags, flasks only.
+- Customers cluster in New Cairo / Fifth Settlement, Sheikh Zayed, Maadi, Zamalek.
+- Budget is very tight: test everything before spending; calculate creative quality and risk first.
+- Paid baseline (Meta, 27 Sep-26 Nov): 28.2k EGP spend -> 38 attributed purchases, 56.6k EGP (ROAS 2.0); store total 70.4k (blended 2.5x). Best ad sets ran 4.1-4.6x ROAS at ~355-410 EGP/purchase.
+
 ## Key docs
 `GROWTH_PLAN.md`, `MOCKERS_CATALOGUE_PLAYBOOK.md`, `MIGRATION_PLAN_LIVE.md`, `catalog-build/`, `reports/live_products.csv`.
