@@ -1,0 +1,21 @@
+dimension,value,orders
+source,Instagram,23
+source,direct,7
+source,https://facebook.com/,4
+source,Facebook,3
+source,an unknown source,3
+source,https://shopify.com/,1
+source,Google,1
+payment,Cash on Delivery (COD),31
+payment,Paymob - Native Checkout for Debit/Credit Cards,7
+payment,Paymob,3
+payment,Paymob - Native Checkout for Debit/Credit Cards + Paymob,1
+region,Cairo,32
+region,Giza,6
+region,6th of October,2
+region,Red Sea,1
+region,Alexandria,1
+financial_status,PENDING,31
+financial_status,PAID,11
+fulfillment_status,FULFILLED,40
+fulfillment_status,UNFULFILLED,2
