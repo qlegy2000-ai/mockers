@@ -45,6 +45,10 @@ Egyptian sarcastic-slogan apparel brand. Shopify store + catalogue scripts + gro
 - Customers cluster in New Cairo / Fifth Settlement, Sheikh Zayed, Maadi, Zamalek.
 - Budget is very tight: test everything before spending; calculate creative quality and risk first.
 - Paid baseline (Meta, 27 Sep-26 Nov): 28.2k EGP spend -> 38 attributed purchases, 56.6k EGP (ROAS 2.0); store total 70.4k (blended 2.5x). Best ad sets ran 4.1-4.6x ROAS at ~355-410 EGP/purchase.
+- **12-month view (Nov 2025-Nov 2026, Meta spend vs Shopify total sales):** 249.8k spend -> 1.155M sales, 754 orders, blended 4.6x. Peak Mar-May 2026 at 6.7-8.3x (Mar: 11.8k -> 98.6k), Dec 2025 5.9x (30.1k -> 179.2k). Decline from Jun (spend up to 38.6k in Jul, CPM 80 -> ~158 by Sep-Oct, constant relaunches) to Nov 1.6x. Feb (1.8k spend) still made 12.3k: organic floor ~12k/month.
+- Best ad ever: video "Ad 3 vd - Copy" (campaign "Old Vid | Camp | 3/18/26 - S", creative 1678137513518396, "Summer Sale" video): 22.2k -> 116 purchases, 171k, CPA 192, CTR 4.15%. Other winners are videos too (Oversized "Perfect Everyday Tees" CTR 4.3%, New Reel 4/29 CPA 319, Caps CPA 228, Hoodies catalogue CPA 260).
+- Pixel "Mockers Pixel" 262349110220793: server events on, Purchase EMQ 8/10; upper-funnel EMQ ~5, fbc coverage 5-8%.
+- Competitors (Ad Library, 26 Nov): In Your Shoe and KAI Collections running many Black Friday sale ads; The Inkjection 1 ad.
 
 ## Key docs
 `GROWTH_PLAN.md`, `MOCKERS_CATALOGUE_PLAYBOOK.md`, `MIGRATION_PLAN_LIVE.md`, `catalog-build/`, `reports/live_products.csv`.
