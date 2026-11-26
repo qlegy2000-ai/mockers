@@ -9,7 +9,7 @@ Egyptian sarcastic-slogan apparel brand. Shopify store + catalogue scripts + gro
 
 ## API access (cloud sessions, **"mockers" environment**)
 - Start sessions in the **mockers** cloud environment (Default has no store access). Allowed hosts: mockers-shop.myshopify.com, mockers.shop, www.mockers.shop, cdn.shopify.com, checkout.pci.shopifyinc.com.
-- Admin API token is saved as a **network secret** for `mockers-shop.myshopify.com`. The proxy injects `X-Shopify-Access-Token`. Never paste or commit tokens.
+- Admin API token (NON-EXPIRING offline token from the OAuth approval-link flow, 26 Nov 2026; app client id 9a6f64b8…) is saved as a **network secret** for `mockers-shop.myshopify.com`. The proxy injects `X-Shopify-Access-Token`. Never paste or commit tokens.
 - Scripts read `SHOP`/`TOKEN` env vars. Run them with a placeholder token:
   `SHOP=mockers-shop.myshopify.com TOKEN=proxy-injected python3 <script>.py`
 - Admin API version used: `2026-07` (GraphQL). Orders are readable for the last 60 days only.
