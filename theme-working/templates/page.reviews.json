@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "story_reviews": {
+      "type": "mk-story-reviews",
+      "blocks": {
+        "story_1": { "type": "story", "settings": {} },
+        "story_2": { "type": "story", "settings": {} },
+        "story_3": { "type": "story", "settings": {} },
+        "story_4": { "type": "story", "settings": {} }
+      },
+      "block_order": ["story_1", "story_2", "story_3", "story_4"],
+      "settings": {
+        "button_link": "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTMzMzIwOTEzNzU4Nzc0"
+      }
+    }
+  },
+  "order": ["story_reviews"]
+}

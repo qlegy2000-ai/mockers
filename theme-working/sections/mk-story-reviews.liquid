@@ -1,0 +1,162 @@
+{%- comment -%}
+  mk-story-reviews.liquid: customer reviews shown as Instagram-story cards.
+
+  Each block is one story screenshot (9:16). Cards sit in a swipeable row; tapping a
+  card opens it full screen with arrows / swipe to move between stories.
+  Upload screenshots of the "Reviews" highlight from @mockers in the theme editor.
+
+  HIDDEN UNTIL APPROVED: this section is only used by templates/page.reviews.json,
+  which is attached to an UNPUBLISHED page. Nothing shows on the storefront until the
+  page is published or the section is added to another template in the theme editor.
+{%- endcomment -%}
+
+{%- liquid
+  assign bg = section.settings.bg_color | default: '#000000'
+  assign fg = section.settings.text_color | default: '#ffffff'
+  assign accent = section.settings.accent_color | default: '#fbcd06'
+  assign sid = section.id
+-%}
+
+<div
+  class="mk-sr"
+  id="mk-sr-{{ sid }}"
+  style="--mk-sr-bg: {{ bg }}; --mk-sr-fg: {{ fg }}; --mk-sr-accent: {{ accent }}; --mk-sr-pt: {{ section.settings.padding_top }}px; --mk-sr-pb: {{ section.settings.padding_bottom }}px;"
+>
+  <div class="mk-sr__head">
+    {%- if section.settings.eyebrow != blank -%}<p class="mk-sr__eyebrow">{{ section.settings.eyebrow }}</p>{%- endif -%}
+    {%- if section.settings.heading != blank -%}<h2 class="mk-sr__heading">{{ section.settings.heading }}</h2>{%- endif -%}
+    {%- if section.settings.subheading != blank -%}<p class="mk-sr__sub">{{ section.settings.subheading }}</p>{%- endif -%}
+  </div>
+
+  <div class="mk-sr__track" role="list">
+    {%- for block in section.blocks -%}
+      <figure class="mk-sr__card" role="listitem" data-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+        <button type="button" class="mk-sr__open" aria-label="Open review {{ forloop.index }}">
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | image_url: width: 720 | image_tag: loading: 'lazy', widths: '240, 360, 480, 720', sizes: '(min-width: 990px) 240px, 62vw', class: 'mk-sr__img', alt: block.settings.customer | default: 'Customer review' }}
+          {%- else -%}
+            <span class="mk-sr__placeholder">Upload a story screenshot</span>
+          {%- endif -%}
+        </button>
+        {%- if block.settings.customer != blank or block.settings.product != blank -%}
+          <figcaption class="mk-sr__cap">
+            {%- if block.settings.customer != blank -%}<span class="mk-sr__who">{{ block.settings.customer }}</span>{%- endif -%}
+            {%- if block.settings.product != blank -%}
+              <a class="mk-sr__prod" href="{{ block.settings.product.url }}">{{ block.settings.product.title }} &rarr;</a>
+            {%- endif -%}
+          </figcaption>
+        {%- endif -%}
+      </figure>
+    {%- else -%}
+      <p class="mk-sr__empty">Add “Story” blocks and upload screenshots from the Instagram reviews highlight.</p>
+    {%- endfor -%}
+  </div>
+
+  {%- if section.settings.button_text != blank -%}
+    <div class="mk-sr__actions">
+      <a class="mk-sr__btn" href="{{ section.settings.button_link | default: 'https://www.instagram.com/' }}" target="_blank" rel="noopener">{{ section.settings.button_text }}</a>
+    </div>
+  {%- endif -%}
+
+  <div class="mk-sr__lb" hidden aria-modal="true" role="dialog" aria-label="Customer review">
+    <button type="button" class="mk-sr__lb-x" aria-label="Close">&times;</button>
+    <button type="button" class="mk-sr__lb-nav mk-sr__lb-prev" aria-label="Previous">&#8249;</button>
+    <div class="mk-sr__lb-stage"></div>
+    <button type="button" class="mk-sr__lb-nav mk-sr__lb-next" aria-label="Next">&#8250;</button>
+  </div>
+</div>
+
+<style>
+  #mk-sr-{{ sid }} { background: var(--mk-sr-bg); color: var(--mk-sr-fg); padding: var(--mk-sr-pt) 0 var(--mk-sr-pb); overflow: hidden; }
+  #mk-sr-{{ sid }} .mk-sr__head { max-width: 760px; margin: 0 auto 28px; padding: 0 16px; text-align: center; }
+  #mk-sr-{{ sid }} .mk-sr__eyebrow { margin: 0 0 8px; color: var(--mk-sr-accent); font-size: 13px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+  #mk-sr-{{ sid }} .mk-sr__heading { margin: 0; color: var(--mk-sr-fg); font-size: clamp(28px, 5vw, 46px); line-height: 1.05; text-transform: uppercase; }
+  #mk-sr-{{ sid }} .mk-sr__sub { margin: 12px 0 0; opacity: .75; font-size: 15px; }
+  #mk-sr-{{ sid }} .mk-sr__track { display: flex; gap: 14px; overflow-x: auto; scroll-snap-type: x mandatory; padding: 4px 16px 14px; scrollbar-width: thin; -webkit-overflow-scrolling: touch; }
+  @media (min-width: 990px) { #mk-sr-{{ sid }} .mk-sr__track { justify-content: safe center; } }
+  #mk-sr-{{ sid }} .mk-sr__card { flex: 0 0 62vw; max-width: 240px; margin: 0; scroll-snap-align: center; }
+  #mk-sr-{{ sid }} .mk-sr__open { display: block; width: 100%; aspect-ratio: 9 / 16; padding: 0; border: 2px solid var(--mk-sr-accent); border-radius: 14px; overflow: hidden; background: #1a1a1a; cursor: zoom-in; }
+  #mk-sr-{{ sid }} .mk-sr__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  #mk-sr-{{ sid }} .mk-sr__placeholder { display: flex; align-items: center; justify-content: center; height: 100%; padding: 16px; color: #888; font-size: 13px; text-align: center; }
+  #mk-sr-{{ sid }} .mk-sr__cap { display: flex; flex-direction: column; gap: 2px; padding: 8px 2px 0; font-size: 13px; }
+  #mk-sr-{{ sid }} .mk-sr__who { font-weight: 700; }
+  #mk-sr-{{ sid }} .mk-sr__prod { color: var(--mk-sr-accent); text-decoration: none; }
+  #mk-sr-{{ sid }} .mk-sr__empty { margin: 0 auto; opacity: .6; }
+  #mk-sr-{{ sid }} .mk-sr__actions { text-align: center; margin-top: 22px; padding: 0 16px; }
+  #mk-sr-{{ sid }} .mk-sr__btn { display: inline-block; padding: 13px 26px; border-radius: 999px; background: var(--mk-sr-accent); color: #000; font-weight: 700; text-decoration: none; text-transform: uppercase; letter-spacing: .06em; font-size: 14px; }
+  #mk-sr-{{ sid }} .mk-sr__lb { position: fixed; inset: 0; z-index: 2147483000; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,.92); }
+  #mk-sr-{{ sid }} .mk-sr__lb[hidden] { display: none; }
+  #mk-sr-{{ sid }} .mk-sr__lb-stage img { max-height: 90vh; max-width: min(92vw, 506px); aspect-ratio: 9 / 16; object-fit: contain; border-radius: 12px; display: block; }
+  #mk-sr-{{ sid }} .mk-sr__lb-x { position: absolute; top: 12px; right: 16px; background: none; border: 0; color: #fff; font-size: 36px; line-height: 1; cursor: pointer; }
+  #mk-sr-{{ sid }} .mk-sr__lb-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; border: 0; background: rgba(255,255,255,.14); color: #fff; font-size: 30px; line-height: 1; cursor: pointer; }
+  #mk-sr-{{ sid }} .mk-sr__lb-prev { left: 12px; }
+  #mk-sr-{{ sid }} .mk-sr__lb-next { right: 12px; }
+</style>
+
+<script>
+  (function () {
+    var root = document.getElementById('mk-sr-{{ sid }}');
+    if (!root) return;
+    var lb = root.querySelector('.mk-sr__lb'), stage = root.querySelector('.mk-sr__lb-stage');
+    var cards = Array.prototype.slice.call(root.querySelectorAll('.mk-sr__card'));
+    var srcs = cards.map(function (c) { var i = c.querySelector('img'); return i ? (i.currentSrc || i.src) : null; });
+    var cur = 0, x0 = null;
+    function show(i) {
+      var n = srcs.length; if (!n) return;
+      cur = (i + n) % n;
+      if (!srcs[cur]) return;
+      stage.innerHTML = '<img alt="Customer review" src="' + srcs[cur].replace(/width=\d+/, 'width=1080') + '">';
+      lb.hidden = false; document.documentElement.style.overflow = 'hidden';
+    }
+    function close() { lb.hidden = true; stage.innerHTML = ''; document.documentElement.style.overflow = ''; }
+    cards.forEach(function (c, i) { var b = c.querySelector('.mk-sr__open'); if (b) b.addEventListener('click', function () { show(i); }); });
+    root.querySelector('.mk-sr__lb-x').addEventListener('click', close);
+    root.querySelector('.mk-sr__lb-prev').addEventListener('click', function () { show(cur - 1); });
+    root.querySelector('.mk-sr__lb-next').addEventListener('click', function () { show(cur + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+    document.addEventListener('keydown', function (e) {
+      if (lb.hidden) return;
+      if (e.key === 'Escape') close(); else if (e.key === 'ArrowLeft') show(cur - 1); else if (e.key === 'ArrowRight') show(cur + 1);
+    });
+    lb.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+      if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+      if (Math.abs(dx) > 40) show(cur + (dx < 0 ? 1 : -1));
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Mockers story reviews",
+  "tag": "section",
+  "class": "mk-story-reviews-section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow", "default": "Real people. Real sarcasm." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "What our customers say" },
+    { "type": "text", "id": "subheading", "label": "Subheading", "default": "Straight from our Instagram DMs and stories." },
+    { "type": "text", "id": "button_text", "label": "Button text", "default": "See more on Instagram" },
+    { "type": "url", "id": "button_link", "label": "Button link" },
+    { "type": "color", "id": "bg_color", "label": "Background", "default": "#000000" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#fbcd06" },
+    { "type": "range", "id": "padding_top", "label": "Padding top", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bottom", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 56 }
+  ],
+  "blocks": [
+    {
+      "type": "story",
+      "name": "Story",
+      "limit": 30,
+      "settings": [
+        { "type": "image_picker", "id": "image", "label": "Story screenshot (9:16)" },
+        { "type": "text", "id": "customer", "label": "Customer name or @handle (optional)" },
+        { "type": "product", "id": "product", "label": "Product they bought (optional)" }
+      ]
+    }
+  ],
+  "presets": [
+    { "name": "Mockers story reviews", "blocks": [ { "type": "story" }, { "type": "story" }, { "type": "story" }, { "type": "story" } ] }
+  ]
+}
+{% endschema %}
