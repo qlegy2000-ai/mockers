@@ -1,0 +1,161 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .variant-collection-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  @media screen and (min-width: 750px) {
+    .variant-collection-grid {
+      grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    }
+  }
+  .variant-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .variant-card__image-wrapper {
+    position: relative;
+    padding-bottom: 120%;
+    overflow: hidden;
+    background: #f4f4f4;
+  }
+  .variant-card__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .variant-card__info {
+    padding-top: 1rem;
+  }
+  .variant-card__vendor {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+    margin-bottom: 0.2rem;
+  }
+  .variant-card__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .variant-card__subtitle {
+    margin: 0 0 0.5rem 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+</style>
+
+<div class="page-width collection section-{{ section.id }}-padding">
+  {%- paginate collection.products by 250 -%}
+    
+    <div class="collection-hero" style="margin-bottom: 3rem;">
+      <h1 class="collection-hero__title h2">{{ collection.title | escape }}</h1>
+      {%- if collection.description != blank -%}
+        <div class="collection-hero__description rte">{{ collection.description }}</div>
+      {%- endif -%}
+    </div>
+
+    <ul id="product-grid" class="variant-collection-grid">
+      {%- for product in collection.products -%}
+        
+        {%- for variant in product.variants -%}
+          {%- assign variant_style = variant.option1 | downcase -%}
+
+          {% comment %} 
+            Only look for the Regular Fit T-Shirt
+          {% endcomment %}
+          {%- if variant_style == 'regular fit t-shirt' -%}
+
+            <li class="grid__item">
+              <div class="card-wrapper product-card-wrapper">
+                <a href="{{ variant.url }}" class="variant-card">
+                  
+                  <div class="variant-card__image-wrapper">
+                    {%- assign target_image = variant.image | default: product.featured_image -%}
+                    {%- if target_image != blank -%}
+                      <img 
+                        src="{{ target_image | image_url: width: 600 }}" 
+                        alt="{{ product.title | escape }} - {{ variant.option1 | escape }}"
+                        loading="lazy"
+                        class="variant-card__image"
+                      >
+                    {%- else -%}
+                      {{ 'product-1' | placeholder_svg_tag: 'variant-card__image' }}
+                    {%- endif -%}
+                  </div>
+
+                  <div class="variant-card__info">
+                    {%- if section.settings.show_vendor -%}
+                      <div class="variant-card__vendor">{{ product.vendor }}</div>
+                    {%- endif -%}
+                    
+                    <h3 class="variant-card__title">{{ product.title }}</h3>
+                    <p class="variant-card__subtitle">{{ variant.option1 }}</p>
+                    
+                    <div class="price">
+                      <span class="price-item price-item--regular">
+                        {{ variant.price | money }}
+                      </span>
+                    </div>
+                  </div>
+
+                </a>
+              </div>
+            </li>
+
+            {% comment %} 
+              Once we find the first Regular Fit T-shirt for this design, 
+              break the loop so it skips the rest of the sizes and colors!
+            {% endcomment %}
+            {% break %}
+
+          {%- endif -%}
+        {%- endfor -%}
+
+      {%- endfor -%}
+    </ul>
+
+    {%- if paginate.pages > 1 -%}
+      <div class="pagination-wrapper">
+        {{ paginate | default_pagination }}
+      </div>
+    {%- endif -%}
+
+  {%- endpaginate -%}
+</div>
+
+{% schema %}
+{
+  "name": "Variant Collection Grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "Number of columns on desktop"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "Show vendor"
+    }
+  ]
+}
+{% endschema %}

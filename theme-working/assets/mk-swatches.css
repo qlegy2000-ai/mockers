@@ -1,0 +1,149 @@
+/* Mockers — colour swatches.
+   variant-picker.js does `label.style.backgroundColor = c || n`, where n is the option
+   value NAME. The theme's colour map is empty, so names like "Dark Green", "Aegean Blue",
+   "Burgundy" and "Beetroot Purple" are fed to CSS as-is, are invalid, and get discarded —
+   leaving the swatch black. These rules override that inline style with real hex.
+   !important is required: it must beat an inline style. */
+
+.m-product-option--node[data-value="Aegean Blue"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Aegean Blue"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-aegean-blue {
+  background-color: #1c4054 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Beetroot Purple"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Beetroot Purple"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-beetroot-purple {
+  background-color: #46131c !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Beige"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Beige"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-beige {
+  background-color: #D9CBB3 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Beige Cafe"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Beige Cafe"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-beige-cafe {
+  background-color: #C2A98B !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Black"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Black"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-black {
+  background-color: #111111 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Burgundy"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Burgundy"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-burgundy {
+  background-color: #6B1F2B !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Cashmere Pink"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Cashmere Pink"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-cashmere-pink {
+  background-color: #D9A7A0 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Dark Blue"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Dark Blue"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-dark-blue {
+  background-color: #1b2533 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Dark Green"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Dark Green"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-dark-green {
+  background-color: #2e422b !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Earth Green"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Earth Green"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-earth-green {
+  background-color: #4A5D3A !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Iron Grey"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Iron Grey"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-iron-grey {
+  background-color: #302e2e !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Pink"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Pink"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-pink {
+  background-color: #E8A0B4 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Pistache Green"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Pistache Green"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-pistache-green {
+  background-color: #9CBF8A !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Royal Dark Green"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Royal Dark Green"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-royal-dark-green {
+  background-color: #14452F !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="White"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="White"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-white {
+  background-color: #FFFFFF !important;
+  background-image: none !important;
+}
+
+/* White would disappear against the black storefront */
+.m-product-option--node[data-value="White"] .m-product-option--node__label {
+  box-shadow: 0 0 0 1px rgba(128,128,128,.55) !important;
+}
+/* never leave the grey loading placeholder visible on a colour swatch */
+.m-product-option--swatch .m-product-option--node__label[data-option-type="color"].option-loading {
+  background-color: transparent !important;
+}
+
+/* Supplied by Mockers, Sept 2026 — real garment colours, not estimates. */
+.m-product-option--node[data-value="Purple"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Purple"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-purple {
+  background-color: #4e2c49 !important;
+  background-image: none !important;
+}
+.m-product-option--node[data-value="Offwhite"] .m-product-option--node__label[data-option-type="color"],
+.m-product-option--node[data-value="Offwhite"] .m-product-option--node__label[data-option-type="default"],
+.m-facet--color-offwhite {
+  background-color: #eee3cc !important;
+  background-image: none !important;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.18);
+}
+
+/* Winter garments are genuinely dark, so five swatches in a row can merge into one
+   black blob. A hairline inner ring keeps each circle's edge readable without
+   misrepresenting the colour. Marker class: mk-swatch-edge */
+.m-product-option--swatch .m-product-option--node__label[data-option-type="color"],
+.m-product-option--swatch .m-product-option--node__label[data-option-type="default"] {
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.22), 0 0 0 1px rgba(0,0,0,.20);
+}
+
+/* ---------------------------------------------------------------
+   Garment-specific colours.
+
+   The rules above key on colour NAME alone, which is right while a colour
+   means the same blank on every garment. Purple and Aegean Blue do not: the
+   hoodie blanks are their own shades. product-option.liquid tags each option
+   container with data-mk-style, so the hoodie values can win without touching
+   the tee or oversized swatches.
+   --------------------------------------------------------------- */
+[data-mk-style="Hoodie"] .m-product-option--node[data-value="Purple"] .m-product-option--node__label[data-option-type="color"],
+[data-mk-style="Hoodie"] .m-product-option--node[data-value="Purple"] .m-product-option--node__label[data-option-type="default"] {
+  background-color: #2a1b3d !important;
+  background-image: none !important;
+}
+[data-mk-style="Hoodie"] .m-product-option--node[data-value="Aegean Blue"] .m-product-option--node__label[data-option-type="color"],
+[data-mk-style="Hoodie"] .m-product-option--node[data-value="Aegean Blue"] .m-product-option--node__label[data-option-type="default"] {
+  background-color: #11334f !important;
+  background-image: none !important;
+}

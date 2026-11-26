@@ -1,0 +1,18 @@
+{%- comment -%}
+  Short, unambiguous label for a garment, for use in tight spaces like card chips.
+  Our designs run to five garments, so the full names ("Oversized Heavy Premium")
+  would stack five lines deep under every card. Accepts: style (string).
+{%- endcomment -%}
+{%- liquid
+  case style
+    when 'Regular Fit T-Shirt'
+      assign out = 'Regular'
+    when 'Oversized Light-Soft'
+      assign out = 'Light-Soft'
+    when 'Oversized Heavy Premium'
+      assign out = 'Heavy Premium'
+    else
+      assign out = style
+  endcase
+-%}
+{{- out -}}

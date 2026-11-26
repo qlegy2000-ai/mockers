@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mockers — Images Needed</title>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body, * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1c2b33;
+    font-size: 10pt;
+    line-height: 1.55;
+  }
+  h1, h2, h3, h4 { font-family: 'Helvetica Neue', Arial, sans-serif; color: #0f2540; margin: 0 0 6px 0; }
+
+  /* ---------- Cover page ---------- */
+  .cover {
+    height: 297mm;
+    width: 210mm;
+    position: relative;
+    background: linear-gradient(160deg, #0d2b47 0%, #123a5e 45%, #17608c 100%);
+    color: #ffffff;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .cover::after {
+    content: "";
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(41,182,246,0.35) 0%, rgba(41,182,246,0) 70%);
+  }
+  .cover-inner { position: relative; z-index: 2; padding: 26mm 20mm 0 20mm; height: 100%; }
+  .cover-logo-wrap {
+    background: #ffffff; border-radius: 14px; width: 90px; height: 90px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .cover-logo-wrap img { width: 66px; height: 66px; object-fit: contain; }
+  .cover-agency { margin-top: 12px; font-size: 10pt; letter-spacing: 3px; color: #8fd3ff; text-transform: uppercase; font-weight: 600; }
+  .cover-eyebrow { margin-top: 60px; font-size: 10.5pt; letter-spacing: 3px; color: #6fc3f0; text-transform: uppercase; font-weight: 700; }
+  .cover-title { margin-top: 10px; font-size: 30pt; font-weight: 700; line-height: 1.2; max-width: 155mm; }
+  .cover-subtitle { margin-top: 16px; font-size: 11.5pt; color: #cfe8fb; font-weight: 300; }
+  .cover-divider { margin-top: 24px; width: 60px; height: 4px; background: linear-gradient(90deg, #29b6f6, #1e88e5); border-radius: 2px; }
+  .cover-facts {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    max-width: 150mm;
+  }
+  .cover-fact {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .cover-fact .k { font-size: 7.8pt; text-transform: uppercase; letter-spacing: 1px; color: #a9d6f2; margin-bottom: 3px; }
+  .cover-fact .v { font-size: 11pt; font-weight: 700; color: #fff; }
+  .cover-meta {
+    position: absolute; bottom: 22mm; left: 20mm; right: 20mm;
+    display: flex; justify-content: space-between;
+    font-size: 9.5pt; color: #bcdff5;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    padding-top: 12px;
+  }
+  .cover-meta strong { display: block; color: #ffffff; font-size: 10pt; margin-bottom: 2px; }
+
+  /* ---------- Content flow ---------- */
+  .doc { padding: 16mm 18mm 24mm 18mm; }
+  .sec-title { padding-top: 2mm; }
+  .sec { margin-bottom: 20px; }
+  p, ul, h3.sub { page-break-inside: avoid; }
+  .sec.fresh-page { page-break-before: always; }
+
+  .doc-header {
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 2px solid #123a5e; padding-bottom: 8px; margin-bottom: 18px;
+  }
+  .doc-header .brand { display: flex; align-items: center; gap: 8px; }
+  .doc-header .brand img { width: 22px; height: 22px; }
+  .doc-header .brand span { font-weight: 700; color: #123a5e; font-size: 10.5pt; letter-spacing: 0.5px; }
+.cover-client { margin-top: 22px; margin-bottom: 4px; }
+  .cover-client img { height: 58px; display: block; }
+  .client-mark { background: #0f2540; border-radius: 5px; padding: 5px 11px; display: flex; align-items: center; }
+  .client-mark img { height: 13px; display: block; }
+  .footer-mark { display: inline-flex; align-items: center; opacity: .9; }
+  .footer-mark img { height: 11px; display: block; }
+  .doc-header .doc-name { font-size: 8.5pt; color: #6b7c87; text-transform: uppercase; letter-spacing: 1px; }
+
+  .sec-title {
+    display: flex; align-items: center; gap: 10px;
+    margin: 0 0 10px 0;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  .sec-num {
+    background: #123a5e; color: #fff; width: 26px; height: 26px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10.5pt; font-weight: 700; flex-shrink: 0;
+  }
+  .sec-title h2 { font-size: 13.5pt; margin: 0; }
+
+  h3.sub {
+    font-size: 10.6pt; color: #17608c; margin: 14px 0 6px 0;
+    border-left: 3px solid #29b6f6; padding-left: 8px;
+    page-break-after: avoid;
+  }
+
+  p { margin: 0 0 8px 0; }
+  ul { margin: 4px 0 10px 0; padding-left: 20px; }
+  li { margin-bottom: 4px; page-break-inside: avoid; }
+
+  .lead { font-size: 10.2pt; color: #384852; }
+
+  /* ---------- Callout boxes ---------- */
+  .box {
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 8px 0 12px 0;
+    font-size: 9.4pt;
+    page-break-inside: avoid;
+  }
+  .box-info { background: #f2f8fc; border-left: 3px solid #17608c; }
+  .box-warn { background: #fdf5ec; border-left: 3px solid #d18a2e; }
+  .box-note { background: #f7f9fb; border: 1px solid #e6ebef; }
+  .result-box { background: #eef7f0; border-left: 3px solid #1e8032; border-radius: 6px; padding: 10px 14px; margin: 8px 0 12px 0; font-size: 9.4pt; page-break-inside: avoid; }
+  .result-box .label { display: block; font-weight: 700; color: #1e8032; font-size: 8.2pt; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+
+  .link-box { background: #f7f9fb; border: 1px solid #e6ebef; border-radius: 6px; padding: 10px 14px; margin: 8px 0 12px 0; font-size: 9.2pt; page-break-inside: avoid; }
+  .link-box .row { margin-bottom: 3px; }
+  .link-box .label { color: #5b6b76; font-weight: 600; margin-right: 6px; }
+  .link-box a { color: #17608c; }
+
+  .tag-done, .tag-pending { font-size: 7pt; font-weight: 700; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+  .tag-done { background: #e7f5ea; color: #1e8032; }
+  .tag-pending { background: #fdf1e3; color: #b25b13; }
+
+  .shot { border: 1px solid #e6ebef; border-radius: 6px; padding: 6px; page-break-inside: avoid; margin: 8px 0; }
+  .shot img { width: 100%; display: block; border-radius: 3px; }
+  .shot .cap { font-size: 8pt; color: #7a8892; margin-top: 4px; text-align: center; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+
+  table.data { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 9pt; page-break-inside: avoid; }
+  table.data thead { display: table-header-group; }
+  table.data tr { page-break-inside: avoid; }
+  table.data th { background: #123a5e; color: #fff; text-align: left; padding: 6px 9px; font-weight: 600; }
+  table.data td { padding: 5px 9px; border-bottom: 1px solid #e6ebef; }
+  table.data tr:nth-child(even) td { background: #f7f9fb; }
+
+  table.summary { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 9.3pt; }
+  table.summary td { padding: 6px 9px; border-bottom: 1px dashed #e6ebef; vertical-align: top; }
+  table.summary td.k { color: #5b6b76; width: 40%; font-weight: 600; }
+  table.summary td.v { color: #1c2b33; font-weight: 600; }
+
+  /* ---------- Investment highlight ---------- */
+  .invest-box {
+    background: linear-gradient(135deg, #0d2b47, #17608c);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    text-align: center;
+    margin: 10px 0 16px 0;
+    page-break-inside: avoid;
+  }
+  .invest-box .lbl { font-size: 8.5pt; letter-spacing: 2px; text-transform: uppercase; color: #a9d6f2; }
+  .invest-box .amt { font-size: 26pt; font-weight: 800; margin-top: 4px; }
+  .invest-box .cur { font-size: 12pt; font-weight: 500; color: #cfe8fb; }
+
+  /* ---------- Payment milestones ---------- */
+  .milestones { display: flex; gap: 10px; margin: 10px 0 14px 0; }
+  .milestone {
+    flex: 1; background: #f7f9fb; border: 1px solid #e6ebef; border-radius: 8px;
+    padding: 12px 12px; text-align: center; page-break-inside: avoid;
+  }
+  .milestone .pct { font-size: 17pt; font-weight: 800; color: #123a5e; }
+  .milestone .amt { font-size: 9.5pt; color: #1e8032; font-weight: 700; margin-top: 2px; }
+  .milestone .lbl { font-size: 8.2pt; color: #5b6b76; margin-top: 4px; line-height: 1.35; }
+
+  /* ---------- Timeline phases ---------- */
+  .phases { display: flex; flex-direction: column; gap: 10px; margin: 10px 0 14px 0; }
+  .phase {
+    border: 1px solid #e1e8ee; border-radius: 8px; overflow: hidden; page-break-inside: avoid;
+  }
+  .phase .phead {
+    background: #f2f8fc; padding: 7px 12px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .phase .phead .name { font-weight: 700; color: #123a5e; font-size: 9.8pt; }
+  .phase .phead .dur { font-size: 8.2pt; color: #17608c; font-weight: 700; background: #e3f1fb; padding: 2px 9px; border-radius: 10px; }
+  .phase .pbody { padding: 8px 12px; }
+  .phase .pbody ul { margin: 4px 0; padding-left: 18px; }
+  .phase .pbody li { font-size: 9pt; margin-bottom: 2px; }
+
+  .timeline-total {
+    display: flex; align-items: center; gap: 8px; justify-content: center;
+    font-weight: 700; font-size: 10.5pt; color: #123a5e; margin: 12px 0;
+  }
+  .timeline-total .step { background: #eef4f9; border: 1px solid #d7e4ee; padding: 5px 14px; border-radius: 20px; }
+  .timeline-total .arrow { color: #29b6f6; }
+  .timeline-total .step.final { background: #123a5e; color: #fff; border-color: #123a5e; }
+
+  /* ---------- Task list / checklist components ---------- */
+  .progress-row { display: flex; gap: 14px; margin: 18px 0 14px 0; }
+  .stat { flex: 1; background: #f7f9fb; border: 1px solid #e6ebef; border-radius: 8px; padding: 14px; text-align: center; }
+  .stat .num { font-size: 22pt; font-weight: 800; color: #123a5e; }
+  .stat.done .num { color: #1e8032; }
+  .stat.pending .num { color: #d18a2e; }
+  .stat .lbl { font-size: 8pt; text-transform: uppercase; letter-spacing: 1px; color: #7a8892; margin-top: 2px; }
+
+  .bar-wrap { margin: 0 0 20px 0; }
+  .bar-track { height: 8px; background: #e6ebef; border-radius: 4px; overflow: hidden; }
+  .bar-fill { background: linear-gradient(90deg, #1e8032, #3fae57); height: 100%; }
+  .bar-caption { display: flex; justify-content: space-between; font-size: 8pt; color: #7a8892; margin-top: 4px; }
+
+  .sec-head { display: flex; align-items: center; gap: 8px; justify-content: space-between; border-bottom: 1px solid #e6ebef; padding-bottom: 6px; margin-bottom: 8px; }
+  .sec-head .dot { width: 9px; height: 9px; border-radius: 50%; background: #29b6f6; flex-shrink: 0; }
+  .sec-head h2 { font-size: 12pt; margin: 0; flex: 1; }
+  .sec-head .count { font-size: 8.3pt; color: #7a8892; font-weight: 600; }
+
+  .tasks { list-style: none; margin: 0; padding: 0; }
+  .tasks li { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; border-bottom: 1px dashed #eef1f3; page-break-inside: avoid; }
+  .task-box { width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+  .task-box.done { border: 1.6px solid #1e8032; background: #1e8032; color: #fff; font-size: 9px; display: flex; align-items: center; justify-content: center; }
+  .task-box.pending { border: 1.6px solid #9fb0ba; background: #fff; }
+  .txt { flex: 1; }
+  .scope { color: #17608c; }
+  .badge { font-size: 7pt; font-weight: 700; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 10px; flex-shrink: 0; }
+  .badge.done { background: #e7f5ea; color: #1e8032; }
+  .badge.pending { background: #fdf1e3; color: #b25b13; }
+
+  /* ---------- Repeating footer (position:fixed repeats on every printed page) ---------- */
+  .page-footer {
+    position: fixed; bottom: 8mm; left: 18mm; right: 18mm;
+    font-size: 7.5pt; color: #9aa8b1; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid #e6ebef; padding-top: 6px;
+  }
+</style>
+</head>
+<body>
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-logo-wrap"><img src="images/logo.png" alt="Quick Link"></div>
+    <div class="cover-agency">Quick Link</div>
+    <div class="cover-eyebrow">Product Photography</div>
+    <div class="cover-client"><img src="images/mockers.png" alt="Mockers"></div>
+    <div class="cover-title">Images Needed</div>
+    <div class="cover-subtitle">Every colour on sale without a photo &mdash; split by whether it is a brand&#8209;new product or an older one with gaps.</div>
+    <div class="cover-divider"></div>
+    <div class="cover-facts">
+      <div class="cover-fact"><div class="k">Images needed</div><div class="v">894</div></div>
+      <div class="cover-fact"><div class="k">Products</div><div class="v">221</div></div>
+      <div class="cover-fact"><div class="k">New products</div><div class="v">355</div></div>
+      <div class="cover-fact"><div class="k">Older products</div><div class="v">539</div></div>
+    </div>
+  </div>
+  <div class="cover-meta">
+    <div><strong>Prepared by</strong>Quick Link</div>
+    <div><strong>Prepared for</strong>Mockers</div>
+    <div><strong>Store</strong>mockers.shop</div>
+    <div><strong>Date</strong>October 17, 2026</div>
+  </div>
+</div>
+
+<!-- ===================== CONTENT ===================== -->
+<div class="doc">
+  <div class="doc-header">
+    <div class="brand"><img src="images/logo.png" alt=""><span>QUICK LINK</span></div>
+    <div class="client-mark"><img src="images/mockers.png" alt="Mockers"></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">1</div><h2>The Headline</h2></div>
+    <p class="lead">A product sells a colour but has no photo of that colour, so the customer picks a swatch and the picture does not change. Counted across all 390 live apparel products.</p>
+    <table class="data">
+      <thead><tr><th style="width:52%">&nbsp;</th><th style="width:22%">Products</th><th>Images</th></tr></thead>
+      <tr><td>Fully photographed &mdash; nothing needed</td><td>169</td><td>&mdash;</td></tr>
+      <tr><td><strong>Missing at least one colour</strong></td><td><strong>221</strong></td><td><strong>894</strong></td></tr>
+      <tr><td><strong>Total</strong></td><td><strong>390</strong></td><td>&nbsp;</td></tr>
+    </table>
+    <div class="box box-info">Nothing is broken &mdash; every product is buyable and shows its design artwork. This is about the gallery, not the listing.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">2</div><h2>Two Different Jobs</h2></div>
+    <p class="lead">The 894 split into two groups that need completely different work. This is the important distinction in this report.</p>
+    <table class="data">
+      <thead><tr><th style="width:12%">Group</th><th style="width:30%">What it is</th><th style="width:14%">Images</th><th>What is needed</th></tr></thead>
+      <tr><td><strong>A</strong></td><td><strong>New products</strong> &mdash; the 69 built on 16 October</td><td><strong>355</strong><br><span style="color:#6b7b85">69 products</span></td><td>Nothing exists but the design artwork. <strong>Every one of these must be created.</strong></td></tr>
+      <tr><td><strong>B</strong></td><td><strong>Older products with photos already in the gallery</strong></td><td><strong>530</strong><br><span style="color:#6b7b85">150 products</span></td><td>These galleries hold <strong>1,393 photos that are not linked to any colour</strong>. Some are the right garment and colour and only need attaching.</td></tr>
+      <tr><td><strong>C</strong></td><td><strong>Older products with no photos at all</strong></td><td><strong>9</strong><br><span style="color:#6b7b85">2 products</span></td><td>Same as group A &mdash; must be created.</td></tr>
+    </table>
+    <div class="box box-warn"><strong>Group B is not simply an attaching job.</strong> Those 1,393 photos were uploaded in bulk and never assigned, and a known share of them show the wrong garment entirely &mdash; hoodie photos sitting on a t&#8209;shirt. Each needs looking at before it is attached or replaced.</div>
+    <div class="box box-note"><strong>Recommended order:</strong> start with group A. It is unambiguous, it covers the newest products, and nothing has to be checked first &mdash; 355 images, 69 products, five colours each.</div>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec fresh-page">
+    <div class="sec-title"><div class="sec-num">3</div><h2>By Garment</h2></div>
+    <table class="data">
+      <thead><tr><th style="width:34%">Garment</th><th style="width:16%">Images</th><th style="width:22%">Products affected</th><th>Of which new</th></tr></thead>
+      <tr><td>Regular Fit T&#8209;Shirt</td><td>409</td><td>76 of 78</td><td>116</td></tr>
+      <tr><td>Sweatshirt</td><td>163</td><td>49 of 78</td><td>78</td></tr>
+      <tr><td>Hoodie</td><td>159</td><td>49 of 78</td><td>78</td></tr>
+      <tr><td>Oversized Heavy Premium</td><td>100</td><td>26 of 78</td><td>68</td></tr>
+      <tr><td>Oversized Light&#8209;Soft</td><td>63</td><td>21 of 78</td><td>15</td></tr>
+    </table>
+    <div class="box box-info">The Regular Fit T&#8209;Shirt is the biggest gap by far &mdash; 76 of its 78 products are short at least one colour. It also carries six colours rather than five, so it needs the most images per product.</div>
+  </div>
+
+  <!-- 4 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">4</div><h2>By Colour</h2></div>
+    <p class="lead">Useful for batching &mdash; one garment colour at a time.</p>
+    <table class="data">
+      <thead><tr><th style="width:40%">Colour</th><th style="width:20%">Images</th><th style="width:20%">New products</th><th>Older products</th></tr></thead>
+      <tr><td>Black</td><td>133</td><td>69</td><td>64</td></tr>
+      <tr><td>Aegean Blue</td><td>105</td><td>36</td><td>69</td></tr>
+      <tr><td>Burgundy</td><td>93</td><td>37</td><td>56</td></tr>
+      <tr><td>White</td><td>83</td><td>31</td><td>52</td></tr>
+      <tr><td>Cashmere Pink</td><td>74</td><td>20</td><td>54</td></tr>
+      <tr><td>Pistache Green</td><td>71</td><td>20</td><td>51</td></tr>
+      <tr><td>Offwhite</td><td>59</td><td>28</td><td>31</td></tr>
+      <tr><td>Beetroot Purple</td><td>59</td><td>16</td><td>43</td></tr>
+      <tr><td>Dark Blue</td><td>59</td><td>16</td><td>43</td></tr>
+      <tr><td>Purple</td><td>58</td><td>16</td><td>42</td></tr>
+      <tr><td>Iron Grey</td><td>27</td><td>16</td><td>11</td></tr>
+      <tr><td>Dark Green</td><td>27</td><td>16</td><td>11</td></tr>
+      <tr><td>Pink</td><td>23</td><td>17</td><td>6</td></tr>
+      <tr><td>Royal Dark Green</td><td>16</td><td>14</td><td>2</td></tr>
+      <tr><td>Earth Green</td><td>5</td><td>3</td><td>2</td></tr>
+      <tr><td>Beige Cafe</td><td>2</td><td>0</td><td>2</td></tr>
+    </table>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec fresh-page">
+    <div class="sec-title"><div class="sec-num">5</div><h2>Designs Needing The Most</h2></div>
+    <table class="data">
+      <thead><tr><th style="width:36%">Design</th><th style="width:20%">Images needed</th><th style="width:22%">Colours on sale</th><th>Products</th></tr></thead>
+      <tr><td>AGGRESSIVE DUCK</td><td>25</td><td>25</td><td>existing</td></tr>
+      <tr><td>ADHD</td><td>23</td><td>23</td><td>existing</td></tr>
+      <tr><td>JOMO</td><td>22</td><td>30</td><td>both</td></tr>
+      <tr><td>WTF</td><td>22</td><td>22</td><td>both</td></tr>
+      <tr><td>DRUNKIN</td><td>21</td><td>32</td><td>both</td></tr>
+      <tr><td>FUNNY HOW?</td><td>21</td><td>28</td><td>both</td></tr>
+      <tr><td>ROLEX</td><td>21</td><td>21</td><td>both</td></tr>
+      <tr><td>SHIT</td><td>21</td><td>21</td><td>both</td></tr>
+      <tr><td>STONED</td><td>20</td><td>20</td><td>both</td></tr>
+      <tr><td>TELEFREAK</td><td>20</td><td>20</td><td>both</td></tr>
+    </table>
+    <div class="box box-note">AGGRESSIVE DUCK and ADHD have no colour photographed on any garment &mdash; they are older products whose galleries were never linked up.</div>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">6</div><h2>The List</h2></div>
+    <p class="lead"><em>missing_product_images.csv</em> &mdash; 894 rows, one per product and colour, sorted so group A comes first.</p>
+    <table class="data">
+      <thead><tr><th style="width:34%">Column</th><th>What it holds</th></tr></thead>
+      <tr><td>Group</td><td>A, B or C as described in section 2</td></tr>
+      <tr><td>Product / Handle</td><td>Product name and its store address</td></tr>
+      <tr><td>Garment / Design</td><td>Which of the five garments, and the artwork</td></tr>
+      <tr><td><strong>Colour needing an image</strong></td><td>The exact garment colour to produce</td></tr>
+      <tr><td>Colours sold / with an image</td><td>How complete the product is today</td></tr>
+      <tr><td>Photos in gallery</td><td>How many pictures already sit on the product</td></tr>
+      <tr><td>What to do</td><td>Create it, or check the gallery first</td></tr>
+    </table>
+  </div>
+
+  <!-- 7 -->
+  <div class="sec" style="page-break-inside: avoid;">
+    <div class="sec-title"><div class="sec-num">7</div><h2>Summary</h2></div>
+    <table class="summary">
+      <tr><td class="k">Images needed</td><td class="v">894 across 221 products</td></tr>
+      <tr><td class="k">Group A &mdash; new products</td><td class="v">355 &mdash; create all</td></tr>
+      <tr><td class="k">Group B &mdash; older, photos unlinked</td><td class="v">530 &mdash; check 1,393 existing photos first</td></tr>
+      <tr><td class="k">Group C &mdash; older, no photos</td><td class="v">9 &mdash; create all</td></tr>
+      <tr><td class="k">Already complete</td><td class="v">169 products need nothing</td></tr>
+      <tr><td class="k">Biggest gap</td><td class="v">Regular Fit T&#8209;Shirt &mdash; 409 images</td></tr>
+      <tr><td class="k">Start here</td><td class="v">Group A &mdash; no checking required</td></tr>
+    </table>
+  </div>
+
+</div>
+
+<div class="page-footer">
+  <span>Quick Link &middot; qlegy.com</span>
+  <span class="footer-mark"><img src="images/mockers.png" alt="Mockers"></span>
+  <span>info@qlegy.com &middot; 01223716991</span>
+</div>
+
+</body>
+</html>

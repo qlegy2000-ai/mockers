@@ -1,0 +1,134 @@
+{%- comment -%}
+  Design style switcher — Mockers
+  ------------------------------
+  Shows the other garments carrying this design, each with its own price.
+  Siblings come from custom.sibling_styles (list.product_reference).
+
+  On the product page the options are plain links.
+  Inside the quick-view modal they swap the modal content in place via Minimog's own
+  QuickView controller, so the shopper never gets thrown out to a full page load.
+
+  Usage:  {% render 'design-style-switcher', product: product %}
+  Renders nothing when a product has no siblings, so it is safe everywhere.
+{%- endcomment -%}
+
+{%- liquid
+  assign siblings = product.metafields.custom.sibling_styles.value
+  assign design_title = product.metafields.custom.design_title | default: product.title
+  assign current_style = product.metafields.custom.style | default: product.type
+-%}
+
+{%- if siblings != blank and siblings.size > 1 -%}
+  <div class="mk-style-switcher" data-design="{{ product.metafields.custom.design_id }}">
+    <div class="mk-style-switcher__label">
+      Style — <span class="mk-style-switcher__current">{{ current_style }}</span>
+    </div>
+
+    <div class="mk-style-switcher__grid">
+      {%- for sib in siblings -%}
+        {%- liquid
+          assign sib_style = sib.metafields.custom.style | default: sib.type
+          assign sold_out = false
+          unless sib.available
+            assign sold_out = true
+          endunless
+        -%}
+        {%- if sib.handle == product.handle -%}
+          <span class="mk-style-opt is-current" aria-current="true">
+            <span class="mk-style-opt__name">{{ sib_style }}</span>
+            <span class="mk-style-opt__price">{{ sib.price_min | money }}</span>
+          </span>
+        {%- else -%}
+          <a class="mk-style-opt{% if sold_out %} is-soldout{% endif %}"
+             href="{{ sib.url }}"
+             data-mk-handle="{{ sib.handle }}"
+             title="{{ design_title | escape }} — {{ sib_style | escape }}">
+            <span class="mk-style-opt__name">{{ sib_style }}</span>
+            <span class="mk-style-opt__price">{{ sib.price_min | money }}</span>
+          </a>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+
+  <style>
+    /* Theme-agnostic: the storefront is dark, but a visitor's OS may be light.
+       Everything derives from currentColor / neutral alpha so it reads on either. */
+    .mk-style-switcher { margin: 20px 0 24px; }
+    .mk-style-switcher__label {
+      font-size: 12px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: .65;
+      margin-bottom: 10px;
+    }
+    .mk-style-switcher__current { font-weight: 700; opacity: 1; }
+    .mk-style-switcher__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 8px;
+    }
+    .mk-style-opt {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+      padding: 10px 12px;
+      border: 1px solid rgba(128, 128, 128, .45);
+      border-radius: 8px;
+      text-decoration: none;
+      color: inherit;
+      line-height: 1.25;
+      cursor: pointer;
+      transition: border-color .15s ease, background-color .15s ease, opacity .15s ease;
+    }
+    .mk-style-opt:hover { border-color: currentColor; background: rgba(128, 128, 128, .12); }
+    .mk-style-opt.is-current {
+      border-color: currentColor;
+      border-width: 2px;
+      padding: 9px 11px;
+      background: rgba(128, 128, 128, .16);
+    }
+    .mk-style-opt.is-soldout { opacity: .45; }
+    .mk-style-opt.is-loading { opacity: .5; pointer-events: none; }
+    .mk-style-opt__name { font-size: 13px; font-weight: 600; }
+    .mk-style-opt__price { font-size: 13px; opacity: .7; }
+    @media (max-width: 480px) {
+      .mk-style-switcher__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+
+  <script>
+    /* Bind once per page, not once per render. */
+    (function () {
+      if (window.mkStyleSwitcherBound) return;
+      window.mkStyleSwitcherBound = true;
+
+      document.addEventListener('click', function (e) {
+        var opt = e.target.closest && e.target.closest('.mk-style-opt[data-mk-handle]');
+        if (!opt) return;
+
+        /* Only hijack inside the quick-view modal. On the product page a normal
+           link is the right behaviour. */
+        if (!opt.closest('.m-product-quickview')) return;
+
+        var qv = window.MinimogTheme && window.MinimogTheme.ProductQuickView;
+        if (!qv || typeof qv.fetchHtml !== 'function') return;   /* let the link work */
+
+        e.preventDefault();
+        opt.classList.add('is-loading');
+
+        try {
+          /* Swap the modal contents in place.
+             Deliberately NOT calling qv.close(): its cleanup runs on a 200ms timer
+             and would delete the freshly fetched content. Removing the current
+             panel ourselves keeps the modal open and avoids that race. */
+          var current = document.querySelector('.m-product-quickview');
+          if (current) current.remove();
+          qv.fetchHtml(opt.getAttribute('data-mk-handle'));
+        } catch (err) {
+          window.location.href = opt.getAttribute('href');
+        }
+      });
+    })();
+  </script>
+{%- endif -%}

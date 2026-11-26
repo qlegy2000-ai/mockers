@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mockers &ndash; Catalogue Rebuild</title>
+<style>
+  @page { size: A4; margin: 0; }
+  html, body, * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #1c2b33;
+    font-size: 10pt;
+    line-height: 1.55;
+  }
+  h1, h2, h3, h4 { font-family: 'Helvetica Neue', Arial, sans-serif; color: #0f2540; margin: 0 0 6px 0; }
+
+  /* ---------- Cover page ---------- */
+  .cover {
+    height: 297mm;
+    width: 210mm;
+    position: relative;
+    background: linear-gradient(160deg, #0d2b47 0%, #123a5e 45%, #17608c 100%);
+    color: #ffffff;
+    overflow: hidden;
+    page-break-after: always;
+  }
+  .cover::after {
+    content: "";
+    position: absolute;
+    right: -120px;
+    bottom: -120px;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(41,182,246,0.35) 0%, rgba(41,182,246,0) 70%);
+  }
+  .cover-inner { position: relative; z-index: 2; padding: 26mm 20mm 0 20mm; height: 100%; }
+  .cover-logo-wrap {
+    background: #ffffff; border-radius: 14px; width: 90px; height: 90px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  .cover-logo-wrap img { width: 66px; height: 66px; object-fit: contain; }
+  .cover-agency { margin-top: 12px; font-size: 10pt; letter-spacing: 3px; color: #8fd3ff; text-transform: uppercase; font-weight: 600; }
+  .cover-eyebrow { margin-top: 60px; font-size: 10.5pt; letter-spacing: 3px; color: #6fc3f0; text-transform: uppercase; font-weight: 700; }
+  .cover-title { margin-top: 10px; font-size: 30pt; font-weight: 700; line-height: 1.2; max-width: 155mm; }
+  .cover-subtitle { margin-top: 16px; font-size: 11.5pt; color: #cfe8fb; font-weight: 300; }
+  .cover-divider { margin-top: 24px; width: 60px; height: 4px; background: linear-gradient(90deg, #29b6f6, #1e88e5); border-radius: 2px; }
+  .cover-facts {
+    margin-top: 34px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    max-width: 150mm;
+  }
+  .cover-fact {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.18);
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .cover-fact .k { font-size: 7.8pt; text-transform: uppercase; letter-spacing: 1px; color: #a9d6f2; margin-bottom: 3px; }
+  .cover-fact .v { font-size: 11pt; font-weight: 700; color: #fff; }
+  .cover-meta {
+    position: absolute; bottom: 22mm; left: 20mm; right: 20mm;
+    display: flex; justify-content: space-between;
+    font-size: 9.5pt; color: #bcdff5;
+    border-top: 1px solid rgba(255,255,255,0.25);
+    padding-top: 12px;
+  }
+  .cover-meta strong { display: block; color: #ffffff; font-size: 10pt; margin-bottom: 2px; }
+
+  /* ---------- Content flow ---------- */
+  .doc { padding: 16mm 18mm 24mm 18mm; }
+  .sec-title { padding-top: 2mm; }
+  .sec { margin-bottom: 20px; }
+  p, ul, h3.sub { page-break-inside: avoid; }
+  .sec.fresh-page { page-break-before: always; }
+
+  .doc-header {
+    display: flex; align-items: center; justify-content: space-between;
+    border-bottom: 2px solid #123a5e; padding-bottom: 8px; margin-bottom: 18px;
+  }
+  .doc-header .brand { display: flex; align-items: center; gap: 8px; }
+  .doc-header .brand img { width: 22px; height: 22px; }
+  .doc-header .brand span { font-weight: 700; color: #123a5e; font-size: 10.5pt; letter-spacing: 0.5px; }
+.cover-client { margin-top: 22px; margin-bottom: 4px; }
+  .cover-client img { height: 58px; display: block; }
+  .client-mark { background: #0f2540; border-radius: 5px; padding: 5px 11px; display: flex; align-items: center; }
+  .client-mark img { height: 13px; display: block; }
+  .footer-mark { display: inline-flex; align-items: center; opacity: .9; }
+  .footer-mark img { height: 11px; display: block; }
+  .doc-header .doc-name { font-size: 8.5pt; color: #6b7c87; text-transform: uppercase; letter-spacing: 1px; }
+
+  .sec-title {
+    display: flex; align-items: center; gap: 10px;
+    margin: 0 0 10px 0;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  .sec-num {
+    background: #123a5e; color: #fff; width: 26px; height: 26px; border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 10.5pt; font-weight: 700; flex-shrink: 0;
+  }
+  .sec-title h2 { font-size: 13.5pt; margin: 0; }
+
+  h3.sub {
+    font-size: 10.6pt; color: #17608c; margin: 14px 0 6px 0;
+    border-left: 3px solid #29b6f6; padding-left: 8px;
+    page-break-after: avoid;
+  }
+
+  p { margin: 0 0 8px 0; }
+  ul { margin: 4px 0 10px 0; padding-left: 20px; }
+  li { margin-bottom: 4px; page-break-inside: avoid; }
+
+  .lead { font-size: 10.2pt; color: #384852; }
+
+  /* ---------- Callout boxes ---------- */
+  .box {
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin: 8px 0 12px 0;
+    font-size: 9.4pt;
+    page-break-inside: avoid;
+  }
+  .box-info { background: #f2f8fc; border-left: 3px solid #17608c; }
+  .box-warn { background: #fdf5ec; border-left: 3px solid #d18a2e; }
+  .box-note { background: #f7f9fb; border: 1px solid #e6ebef; }
+  .result-box { background: #eef7f0; border-left: 3px solid #1e8032; border-radius: 6px; padding: 10px 14px; margin: 8px 0 12px 0; font-size: 9.4pt; page-break-inside: avoid; }
+  .result-box .label { display: block; font-weight: 700; color: #1e8032; font-size: 8.2pt; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 3px; }
+
+  .link-box { background: #f7f9fb; border: 1px solid #e6ebef; border-radius: 6px; padding: 10px 14px; margin: 8px 0 12px 0; font-size: 9.2pt; page-break-inside: avoid; }
+  .link-box .row { margin-bottom: 3px; }
+  .link-box .label { color: #5b6b76; font-weight: 600; margin-right: 6px; }
+  .link-box a { color: #17608c; }
+
+  .tag-done, .tag-pending { font-size: 7pt; font-weight: 700; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 10px; margin-left: 6px; vertical-align: middle; }
+  .tag-done { background: #e7f5ea; color: #1e8032; }
+  .tag-pending { background: #fdf1e3; color: #b25b13; }
+
+  .shot { border: 1px solid #e6ebef; border-radius: 6px; padding: 6px; page-break-inside: avoid; margin: 8px 0; }
+  .shot img { width: 100%; display: block; border-radius: 3px; }
+  .shot .cap { font-size: 8pt; color: #7a8892; margin-top: 4px; text-align: center; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 0 24px; }
+
+  table.data { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 9pt; page-break-inside: avoid; }
+  table.data thead { display: table-header-group; }
+  table.data tr { page-break-inside: avoid; }
+  table.data th { background: #123a5e; color: #fff; text-align: left; padding: 6px 9px; font-weight: 600; }
+  table.data td { padding: 5px 9px; border-bottom: 1px solid #e6ebef; }
+  table.data tr:nth-child(even) td { background: #f7f9fb; }
+
+  table.summary { width: 100%; border-collapse: collapse; margin: 8px 0 14px 0; font-size: 9.3pt; }
+  table.summary td { padding: 6px 9px; border-bottom: 1px dashed #e6ebef; vertical-align: top; }
+  table.summary td.k { color: #5b6b76; width: 40%; font-weight: 600; }
+  table.summary td.v { color: #1c2b33; font-weight: 600; }
+
+  /* ---------- Investment highlight ---------- */
+  .invest-box {
+    background: linear-gradient(135deg, #0d2b47, #17608c);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 24px;
+    text-align: center;
+    margin: 10px 0 16px 0;
+    page-break-inside: avoid;
+  }
+  .invest-box .lbl { font-size: 8.5pt; letter-spacing: 2px; text-transform: uppercase; color: #a9d6f2; }
+  .invest-box .amt { font-size: 26pt; font-weight: 800; margin-top: 4px; }
+  .invest-box .cur { font-size: 12pt; font-weight: 500; color: #cfe8fb; }
+
+  /* ---------- Payment milestones ---------- */
+  .milestones { display: flex; gap: 10px; margin: 10px 0 14px 0; }
+  .milestone {
+    flex: 1; background: #f7f9fb; border: 1px solid #e6ebef; border-radius: 8px;
+    padding: 12px 12px; text-align: center; page-break-inside: avoid;
+  }
+  .milestone .pct { font-size: 17pt; font-weight: 800; color: #123a5e; }
+  .milestone .amt { font-size: 9.5pt; color: #1e8032; font-weight: 700; margin-top: 2px; }
+  .milestone .lbl { font-size: 8.2pt; color: #5b6b76; margin-top: 4px; line-height: 1.35; }
+
+  /* ---------- Timeline phases ---------- */
+  .phases { display: flex; flex-direction: column; gap: 10px; margin: 10px 0 14px 0; }
+  .phase {
+    border: 1px solid #e1e8ee; border-radius: 8px; overflow: hidden; page-break-inside: avoid;
+  }
+  .phase .phead {
+    background: #f2f8fc; padding: 7px 12px; display: flex; justify-content: space-between; align-items: center;
+  }
+  .phase .phead .name { font-weight: 700; color: #123a5e; font-size: 9.8pt; }
+  .phase .phead .dur { font-size: 8.2pt; color: #17608c; font-weight: 700; background: #e3f1fb; padding: 2px 9px; border-radius: 10px; }
+  .phase .pbody { padding: 8px 12px; }
+  .phase .pbody ul { margin: 4px 0; padding-left: 18px; }
+  .phase .pbody li { font-size: 9pt; margin-bottom: 2px; }
+
+  .timeline-total {
+    display: flex; align-items: center; gap: 8px; justify-content: center;
+    font-weight: 700; font-size: 10.5pt; color: #123a5e; margin: 12px 0;
+  }
+  .timeline-total .step { background: #eef4f9; border: 1px solid #d7e4ee; padding: 5px 14px; border-radius: 20px; }
+  .timeline-total .arrow { color: #29b6f6; }
+  .timeline-total .step.final { background: #123a5e; color: #fff; border-color: #123a5e; }
+
+  /* ---------- Task list / checklist components ---------- */
+  .progress-row { display: flex; gap: 14px; margin: 18px 0 14px 0; }
+  .stat { flex: 1; background: #f7f9fb; border: 1px solid #e6ebef; border-radius: 8px; padding: 14px; text-align: center; }
+  .stat .num { font-size: 22pt; font-weight: 800; color: #123a5e; }
+  .stat.done .num { color: #1e8032; }
+  .stat.pending .num { color: #d18a2e; }
+  .stat .lbl { font-size: 8pt; text-transform: uppercase; letter-spacing: 1px; color: #7a8892; margin-top: 2px; }
+
+  .bar-wrap { margin: 0 0 20px 0; }
+  .bar-track { height: 8px; background: #e6ebef; border-radius: 4px; overflow: hidden; }
+  .bar-fill { background: linear-gradient(90deg, #1e8032, #3fae57); height: 100%; }
+  .bar-caption { display: flex; justify-content: space-between; font-size: 8pt; color: #7a8892; margin-top: 4px; }
+
+  .sec-head { display: flex; align-items: center; gap: 8px; justify-content: space-between; border-bottom: 1px solid #e6ebef; padding-bottom: 6px; margin-bottom: 8px; }
+  .sec-head .dot { width: 9px; height: 9px; border-radius: 50%; background: #29b6f6; flex-shrink: 0; }
+  .sec-head h2 { font-size: 12pt; margin: 0; flex: 1; }
+  .sec-head .count { font-size: 8.3pt; color: #7a8892; font-weight: 600; }
+
+  .tasks { list-style: none; margin: 0; padding: 0; }
+  .tasks li { display: flex; align-items: flex-start; gap: 10px; padding: 6px 0; border-bottom: 1px dashed #eef1f3; page-break-inside: avoid; }
+  .task-box { width: 13px; height: 13px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; }
+  .task-box.done { border: 1.6px solid #1e8032; background: #1e8032; color: #fff; font-size: 9px; display: flex; align-items: center; justify-content: center; }
+  .task-box.pending { border: 1.6px solid #9fb0ba; background: #fff; }
+  .txt { flex: 1; }
+  .scope { color: #17608c; }
+  .badge { font-size: 7pt; font-weight: 700; letter-spacing: 0.5px; padding: 2px 8px; border-radius: 10px; flex-shrink: 0; }
+  .badge.done { background: #e7f5ea; color: #1e8032; }
+  .badge.pending { background: #fdf1e3; color: #b25b13; }
+
+  /* ---------- Repeating footer (position:fixed repeats on every printed page) ---------- */
+  .page-footer {
+    position: fixed; bottom: 8mm; left: 18mm; right: 18mm;
+    font-size: 7.5pt; color: #9aa8b1; display: flex; justify-content: space-between; align-items: center;
+    border-top: 1px solid #e6ebef; padding-top: 6px;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- ===================== COVER ===================== -->
+<div class="cover">
+  <div class="cover-inner">
+    <div class="cover-logo-wrap"><img src="images/logo.png" alt="Quick Link"></div>
+    <div class="cover-agency">Quick Link</div>
+    <div class="cover-eyebrow">Action Report</div>
+    <div class="cover-client"><img src="images/mockers.png" alt="Mockers"></div>
+    <div class="cover-title">Catalogue Rebuild</div>
+    <div class="cover-subtitle">Rebuilding the product catalogue so discounts, collections and stock finally work &mdash; and fixing what the storefront showed because of it.</div>
+    <div class="cover-divider"></div>
+    <div class="cover-facts">
+      <div class="cover-fact"><div class="k">Store</div><div class="v">mockers.shop</div></div>
+      <div class="cover-fact"><div class="k">Platform</div><div class="v">Shopify &middot; Minimog 4.1</div></div>
+      <div class="cover-fact"><div class="k">Designs</div><div class="v">64</div></div>
+      <div class="cover-fact"><div class="k">Products Built</div><div class="v">275</div></div>
+    </div>
+  </div>
+  <div class="cover-meta">
+    <div><strong>Prepared by</strong>Quick Link</div>
+    <div><strong>Prepared for</strong>Mockers</div>
+    <div><strong>Environment</strong>Development store</div>
+    <div><strong>Date</strong>September 19, 2026</div>
+  </div>
+</div>
+
+<!-- ===================== CONTENT ===================== -->
+<div class="doc">
+  <div class="doc-header">
+    <div class="brand"><img src="images/logo.png" alt=""><span>QUICK LINK</span></div>
+    <div class="client-mark"><img src="images/mockers.png" alt="Mockers"></div>
+  </div>
+
+  <!-- 1 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">1</div><h2>The Root Problem</h2></div>
+    <p class="lead">Every issue on the store traced back to one decision: the <strong>garment was stored as a variant option</strong>, not as a product.</p>
+    <p>One design was a single Shopify product with three options &mdash; Style &times; Colour &times; Size &mdash; up to 137 variants on one product. Shopify's entire merchandising layer (collections, discounts, inventory, reports, ad feeds) works on <strong>products</strong>. It cannot see option values.</p>
+    <div class="box box-warn">A 30% discount on the old &ldquo;Hoodies&rdquo; collection discounted the t&#8209;shirts too, because each product in it was a whole design, not a hoodie.</div>
+    <h3 class="sub">What we changed</h3>
+    <p>The catalogue was rebuilt so that <strong>one product = one design on one garment</strong>, with Colour and Size as the only variants. This is the same model Threadless uses.</p>
+    <table class="data">
+      <thead><tr><th>&nbsp;</th><th>Before</th><th>After</th></tr></thead>
+      <tr><td>Products</td><td>64 designs</td><td>275 (design &times; garment)</td></tr>
+      <tr><td>Variants</td><td>6,640</td><td>5,563</td></tr>
+      <tr><td>Options</td><td>Style / Colour / Size</td><td>Colour / Size</td></tr>
+      <tr><td>Largest product</td><td>137 variants</td><td>42 variants</td></tr>
+      <tr><td>Collections</td><td>2 usable</td><td>10 automated</td></tr>
+    </table>
+    <div class="result-box"><span class="label">Result</span>Garment type is now a real product field, so collections and discounts can target it. Import ran with <strong>273 products created, 0 failed</strong>.</div>
+  </div>
+
+  <!-- 2 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">2</div><h2>Problems &amp; Fixes</h2></div>
+    <table class="data">
+      <thead><tr><th style="width:31%">Problem</th><th style="width:33%">Cause</th><th>Fix</th></tr></thead>
+      <tr><td>Could not run a winter sale</td><td>Garment was an option value; discounts only target products or collections</td><td>A hidden <em>Winter &ndash; All Garments</em> collection (108 products) is a real collection a discount can point at</td></tr>
+      <tr><td>No hoodie or t&#8209;shirt pages</td><td>No collection could hold a garment</td><td>5 automated garment collections, self&#8209;maintaining</td></tr>
+      <tr><td>Adding a new apparel type meant editing all 64 products</td><td>Every design carried every garment</td><td>New garment = new products only; collections absorb them automatically</td></tr>
+      <tr><td>Inventory impossible to manage</td><td>64 separate stock counters for one physical blank garment</td><td>Tracking off (print&#8209;on&#8209;demand); blanks managed on a 243&#8209;SKU master list</td></tr>
+      <tr><td>~25% of the catalogue showed as sold out</td><td>4,216 variants parked at a fake &ldquo;1000&rdquo;, 1,730 stuck at &ldquo;0&rdquo;</td><td>Policy set to continue selling &mdash; sales are no longer blocked</td></tr>
+      </table>
+      <table class="data"><thead><tr><th style="width:31%">Problem</th><th style="width:33%">Cause</th><th>Fix</th></tr></thead>
+      <tr><td>No SKUs anywhere</td><td>Never set on any of 6,640 variants</td><td>Every variant has a SKU plus a blank&#8209;garment reference</td></tr>
+      <tr><td>Sizes in 22 different spellings</td><td>Manual entry: <em>X-Lagre</em>, <em>Smalll</em>, <em>2x-Large</em></td><td>Normalised to 6: XS S M L XL 2XL</td></tr>
+      <tr><td>Colours in 29 different spellings</td><td><em>black</em> / <em>Black</em>, <em>white-1</em> / <em>White</em></td><td>Normalised to 15 canonical colours</td></tr>
+      <tr><td>361 variants priced wrong</td><td>Compare&#8209;at price set <em>below</em> the selling price</td><td>One canonical price per garment</td></tr>
+      <tr><td>40 junk products live</td><td>Leftover <em>lucky-picks</em> and <em>-copy</em> duplicates</td><td>Removed</td></tr>
+      <tr><td>Split brand name</td><td>Vendor was both <em>Mockers</em> and <em>mockers-shop</em></td><td>Unified to Mockers</td></tr>
+    </table>
+  </div>
+
+  <!-- 3 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">3</div><h2>Before vs Now</h2></div>
+    <p class="lead">The same everyday jobs, before the rebuild and after it.</p>
+    <table class="data">
+      <thead><tr><th style="width:30%">Task</th><th style="width:35%">Before</th><th>Now</th></tr></thead>
+      <tr><td>Run a winter sale</td><td>Not possible without hand&#8209;picking thousands of variants</td><td>One automatic discount on <em>Winter &ndash; All Garments</em> &mdash; about two minutes</td></tr>
+      <tr><td>Show customers all hoodies</td><td>No such page existed</td><td>A hoodie page with 54 designs, updating itself</td></tr>
+      <tr><td>Add a new garment type</td><td>Edit 64 products, roughly 1,800 variants by hand</td><td>Create the new products; every collection picks them up</td></tr>
+      <tr><td>Know your stock</td><td>64 counters for one blank garment</td><td>One blank list, 243 lines, one row per real item</td></tr>
+      <tr><td>See which garment sells best</td><td>Not reportable</td><td>Garment is a real field &mdash; filter and report on it</td></tr>
+      <tr><td>Facebook / Google product feed</td><td>64 items</td><td>275 items, each a specific buyable garment</td></tr>
+      <tr><td>Search ranking</td><td>One page trying to rank for shirts and hoodies at once</td><td>A separate page per garment, each able to rank on its own</td></tr>
+      <tr><td>Seasonal navigation</td><td>None</td><td>Winter and Summer menus and collections</td></tr>
+    </table>
+  </div>
+
+  <!-- 4 -->
+  <div class="sec fresh-page">
+    <div class="sec-title"><div class="sec-num">4</div><h2>Storefront &amp; UI Fixes</h2></div>
+    <p class="lead">Splitting the catalogue exposed several display problems. Each was traced to its cause and fixed in the theme.</p>
+
+    <h3 class="sub">Colour swatches showing black <span class="tag-done">FIXED</span></h3>
+    <p>The theme passed the colour <em>name</em> straight to the browser as a CSS colour. <em>White</em>, <em>Black</em> and <em>Pink</em> happen to be valid, so they worked. <em>Dark Green</em>, <em>Aegean Blue</em>, <em>Burgundy</em> and <em>Beetroot Purple</em> are not valid CSS colours, so the browser discarded them and the swatch stayed black. All 15 colours now have real colour values.</p>
+
+    <h3 class="sub">Product page layout <span class="tag-done">FIXED</span></h3>
+    <p>The page was set to a full&#8209;width layout that stacked the image on top and centred everything underneath. Switched to a two&#8209;column layout: image on the left, title, price, style picker, colour, size and buy button on the right.</p>
+
+    <h3 class="sub">Duplicate designs in product grids <span class="tag-done">FIXED</span></h3>
+    <p>Because one design is now several products, grids repeated the same artwork. Fixed in four places:</p>
+    <ul>
+      <li><strong>Browsing pages</strong> &mdash; new design&#8209;level collections show one card per design</li>
+      <li><strong>Product cards</strong> &mdash; the design name is the headline, the garment is the line beneath it, so two cards are never identical</li>
+      <li><strong>You May Also Like</strong> &mdash; no longer recommends other garments of the design you are already viewing</li>
+      <li><strong>Recently Viewed</strong> &mdash; collapses to one card per design</li>
+    </ul>
+
+    <h3 class="sub">Garment picker on the product page <span class="tag-done">NEW</span></h3>
+    <p>A Threadless&#8209;style row showing every garment the design comes on, each with its own price, so a customer can move between them without losing the design. Inside the quick&#8209;view popup it swaps in place instead of throwing the customer out to a new page.</p>
+    <div class="box box-note">Built natively in the theme &mdash; no paid app and no extra monthly cost.</div>
+  </div>
+
+  <!-- 5 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">5</div><h2>Menu &amp; Homepage</h2></div>
+
+    <h3 class="sub">Navigation</h3>
+    <p>The old menu had a single Summer link pointing at a page that no longer worked. Rebuilt around garments and seasons:</p>
+    <table class="data">
+      <thead><tr><th style="width:26%">Menu</th><th>Leads to</th></tr></thead>
+      <tr><td>Apparel</td><td>All Designs, Regular Fit T&#8209;Shirts, Oversized Light&#8209;Soft, Oversized Heavy Premium, Sweatshirts, Hoodies</td></tr>
+      <tr><td>Winter</td><td>Hoodies, Sweatshirts</td></tr>
+      <tr><td>Summer</td><td>Regular Fit T&#8209;Shirts, Oversized Light&#8209;Soft, Oversized Heavy Premium</td></tr>
+    </table>
+    <div class="box box-warn">Every one of these links was previously broken on the storefront &mdash; the collections existed but had never been published to the sales channel. Now published and live.</div>
+
+    <h3 class="sub">Homepage</h3>
+    <p>Reordered so the product content comes first and the brand storytelling follows:</p>
+    <table class="data">
+      <thead><tr><th style="width:12%">Order</th><th style="width:34%">Section</th><th>Shows</th></tr></thead>
+      <tr><td>1</td><td>Hero slider</td><td>Unchanged</td></tr>
+      <tr><td>2</td><td>Shop by Design</td><td>One card per design &mdash; the design&#8209;first entry point</td></tr>
+      <tr><td>3</td><td>Shop by Garment</td><td>Five garment tiles with live product counts</td></tr>
+      <tr><td>4</td><td>Winter</td><td>Hoodies and sweatshirts, one card per design</td></tr>
+      <tr><td>5</td><td>Summer</td><td>Tees and oversized, one card per design</td></tr>
+      <tr><td>6</td><td>Brand content</td><td>Existing sections, kept and moved below</td></tr>
+    </table>
+    <p>A homepage block pointed at a collection that had been deleted and was showing nothing; it now points at the Winter collection.</p>
+  </div>
+
+  <!-- 6 -->
+  <div class="sec fresh-page">
+    <div class="sec-title"><div class="sec-num">6</div><h2>The Collections Built</h2></div>
+    <p class="lead">Three sets, each with a job. All of them update themselves as designs are added.</p>
+
+    <h3 class="sub">Garment collections &mdash; browse and discount</h3>
+    <table class="data">
+      <thead><tr><th style="width:46%">Collection</th><th style="width:20%">Products</th><th>Rule</th></tr></thead>
+      <tr><td>Hoodie</td><td>54</td><td>Garment is Hoodie</td></tr>
+      <tr><td>Sweatshirt</td><td>54</td><td>Garment is Sweatshirt</td></tr>
+      <tr><td>Regular Fit T&#8209;Shirt</td><td>45</td><td>Garment is Regular Fit T&#8209;Shirt</td></tr>
+      <tr><td>Oversized Heavy Premium</td><td>61</td><td>Garment is Oversized Heavy Premium</td></tr>
+      <tr><td>Oversized Light&#8209;Soft</td><td>61</td><td>Garment is Oversized Light&#8209;Soft</td></tr>
+    </table>
+    <p>Each holds one garment only, so a design can never appear twice inside it.</p>
+
+    <h3 class="sub">Season collections &mdash; what customers see</h3>
+    <table class="data">
+      <thead><tr><th style="width:46%">Collection</th><th style="width:20%">Products</th><th>Rule</th></tr></thead>
+      <tr><td>All Designs</td><td>64</td><td>Cheapest garment of each design</td></tr>
+      <tr><td><strong>Winter Collection</strong></td><td><strong>54</strong></td><td>Cheapest winter garment of each design</td></tr>
+      <tr><td><strong>Summer Collection</strong></td><td><strong>61</strong></td><td>Cheapest summer garment of each design</td></tr>
+    </table>
+    <p>These are what the menu and homepage link to: <strong>one card per design</strong>, never the same artwork twice.</p>
+
+    <h3 class="sub">Discount targets &mdash; hidden from the storefront</h3>
+    <table class="data">
+      <thead><tr><th style="width:46%">Collection</th><th style="width:20%">Products</th><th>Rule</th></tr></thead>
+      <tr><td>Winter &ndash; All Garments</td><td>108</td><td>Hoodies + Sweatshirts</td></tr>
+      <tr><td>Summer &ndash; All Garments</td><td>167</td><td>All three tee types</td></tr>
+    </table>
+    <div class="box box-info">A discount has to reach <strong>every</strong> garment, but a shopper should never scroll past the same design twice. So the two jobs were split: point <strong>discounts</strong> at the hidden all&#8209;garment collections, and let <strong>menus and the homepage</strong> use the season collections. The hidden pair is unpublished from the storefront, so it cannot be browsed by accident &mdash; a discount can still target it normally.</div>
+  </div>
+  </div>
+
+  <!-- 7 -->
+  <div class="sec fresh-page">
+    <div class="sec-title"><div class="sec-num">7</div><h2>Still Outstanding</h2></div>
+    <p class="lead">Two items remain, and both need artwork rather than development.</p>
+
+    <h3 class="sub">Product photography <span class="tag-pending">PENDING</span></h3>
+    <ul>
+      <li><strong>72 images show the wrong colour.</strong> For example, every colour of one t&#8209;shirt design serves the black photo, so a customer choosing White sees a black shirt.</li>
+      <li><strong>88 colour and garment combinations have no photo at all</strong> and fall back to a plain colour block.</li>
+    </ul>
+    <div class="box box-warn">Both problems existed in the old catalogue and were carried across unchanged. Every case is listed by design, garment and colour in the accompanying QA file. These need the correct mockup files &mdash; no code can resolve them.</div>
+
+    <h3 class="sub">Housekeeping <span class="tag-pending">PENDING</span></h3>
+    <ul>
+      <li>A homepage block still promotes a &ldquo;Varsity Round Neck Sweatshirt&rdquo;, which is not one of the five garments sold.</li>
+      <li>Four older homepage content blocks may now be redundant and are worth reviewing together.</li>
+      <li>Colour swatch values are close approximations from the colour names &mdash; worth confirming against the real garments.</li>
+    </ul>
+  </div>
+
+  <!-- 8 -->
+  <div class="sec">
+    <div class="sec-title"><div class="sec-num">8</div><h2>Summary</h2></div>
+    <table class="summary">
+      <tr><td class="k">Designs processed</td><td class="v">64</td></tr>
+      <tr><td class="k">Products built</td><td class="v">275 &mdash; 273 created, 0 failed</td></tr>
+      <tr><td class="k">Variants built</td><td class="v">5,563, each with its own SKU</td></tr>
+      <tr><td class="k">Collections created</td><td class="v">10 automated &mdash; 8 shoppable, 2 hidden discount targets</td></tr>
+      <tr><td class="k">Data corrections</td><td class="v">22 size spellings &rarr; 6 &middot; 29 colours &rarr; 15 &middot; 361 prices &middot; 40 junk products removed</td></tr>
+      <tr><td class="k">Theme work</td><td class="v">Garment picker, two&#8209;column product page, colour swatches, design&#8209;first cards, menu, homepage</td></tr>
+      <tr><td class="k">Recurring app cost</td><td class="v">None &mdash; everything built natively</td></tr>
+      <tr><td class="k">Environment</td><td class="v">Development store, verified on the live storefront</td></tr>
+      <tr><td class="k">Next step</td><td class="v">Supply corrected mockups, then repeat the process on the live store</td></tr>
+    </table>
+    <div class="result-box"><span class="label">Bottom line</span>The catalogue now behaves the way the business works: a design is the thing customers shop for, and the garment is the thing you price, discount, stock and count. Both are real records, so neither gets in the other's way.</div>
+  </div>
+</div>
+
+<div class="page-footer">
+  <span>Quick Link &middot; qlegy.com</span>
+  <span class="footer-mark"><img src="images/mockers.png" alt="Mockers"></span>
+  <span>info@qlegy.com &middot; 01223716991</span>
+</div>
+
+</body>
+</html>

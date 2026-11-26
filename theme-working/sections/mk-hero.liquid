@@ -1,0 +1,223 @@
+{%- comment -%}
+  Mockers hero. Big type, a row of proof stats, two calls to action.
+  Colours default to the brand: near-black ground, white headline, yellow accent.
+  The accent is applied by wrapping words in <em> in the heading field.
+{%- endcomment -%}
+
+{%- liquid
+  assign bg = section.settings.bg_color | default: '#000000'
+  assign fg = section.settings.text_color | default: '#ffffff'
+  assign accent = section.settings.accent_color | default: '#fbcd06'
+-%}
+
+<div
+  class="mk-hero {{ section.settings.container }}{% if section.settings.custom_class != blank %} {{ section.settings.custom_class }}{% endif %}"
+  style="
+    --mk-hero-bg: {{ bg }};
+    --mk-hero-fg: {{ fg }};
+    --mk-hero-accent: {{ accent }};
+    --mk-hero-pt: {{ section.settings.padding_top }}px;
+    --mk-hero-pb: {{ section.settings.padding_bottom }}px;
+    --mk-hero-size: {{ section.settings.heading_size }}px;
+  "
+>
+  <div class="mk-hero__inner">
+    {%- if section.settings.heading != blank -%}
+      <h1 class="mk-hero__heading">{{ section.settings.heading }}</h1>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="mk-hero__stats">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'stat' -%}
+            <div class="mk-hero__stat" {{ block.shopify_attributes }}>
+              {%- if block.settings.value != blank -%}
+                <span class="mk-hero__stat-value">{{ block.settings.value }}</span>
+              {%- endif -%}
+              {%- if block.settings.label != blank -%}
+                <span class="mk-hero__stat-label">{{ block.settings.label }}</span>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.button_1_text != blank or section.settings.button_2_text != blank -%}
+      <div class="mk-hero__actions">
+        {%- if section.settings.button_1_text != blank -%}
+          <a class="mk-hero__btn mk-hero__btn--solid" href="{{ section.settings.button_1_link | default: '#' }}">
+            {{ section.settings.button_1_text }}
+          </a>
+        {%- endif -%}
+        {%- if section.settings.button_2_text != blank -%}
+          <a class="mk-hero__btn mk-hero__btn--ghost" href="{{ section.settings.button_2_link | default: '#' }}">
+            {{ section.settings.button_2_text }}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  .mk-hero {
+    background: var(--mk-hero-bg);
+    color: var(--mk-hero-fg);
+    padding-top: var(--mk-hero-pt);
+    padding-bottom: var(--mk-hero-pb);
+  }
+  .mk-hero__heading {
+    margin: 0;
+    font-size: var(--mk-hero-size);
+    line-height: 0.95;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: var(--mk-hero-fg);
+  }
+  .mk-hero__heading em {
+    font-style: normal;
+    color: var(--mk-hero-accent);
+  }
+  .mk-hero__stats {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px 28px;
+    margin-top: 28px;
+  }
+  .mk-hero__stat {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .mk-hero__stat-value {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--mk-hero-accent);
+    line-height: 1;
+  }
+  .mk-hero__stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+  .mk-hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px;
+  }
+  .mk-hero__btn {
+    display: inline-block;
+    padding: 13px 26px;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--mk-hero-accent);
+    transition: background-color 0.15s ease, color 0.15s ease;
+  }
+  .mk-hero__btn--solid {
+    background: var(--mk-hero-accent);
+    color: #000;
+  }
+  .mk-hero__btn--solid:hover {
+    background: transparent;
+    color: var(--mk-hero-accent);
+  }
+  .mk-hero__btn--ghost {
+    background: transparent;
+    color: var(--mk-hero-fg);
+    border-color: var(--mk-hero-fg);
+  }
+  .mk-hero__btn--ghost:hover {
+    background: var(--mk-hero-fg);
+    color: var(--mk-hero-bg);
+  }
+  @media (max-width: 767px) {
+    .mk-hero__heading {
+      font-size: calc(var(--mk-hero-size) * 0.46);
+    }
+    .mk-hero__stats { gap: 6px 18px; margin-top: 20px; }
+    .mk-hero__stat-value { font-size: 18px; }
+    .mk-hero__stat-label { font-size: 10px; }
+    .mk-hero__actions { margin-top: 24px; }
+    .mk-hero__btn { padding: 11px 18px; font-size: 11px; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Mockers hero",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "container",
+      "label": "Container type",
+      "default": "container-fluid",
+      "options": [
+        { "value": "container-fluid", "label": "Default" },
+        { "value": "container-full", "label": "Full width" },
+        { "value": "container", "label": "Use container box" }
+      ]
+    },
+    {
+      "type": "html",
+      "id": "heading",
+      "label": "Heading",
+      "info": "Wrap words in <em> to paint them in the accent colour.",
+      "default": "Fits your<br>sense of <em>sarcasm</em>"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "label": "Heading size",
+      "min": 32,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 84
+    },
+    { "type": "header", "content": "Buttons" },
+    { "type": "text", "id": "button_1_text", "label": "Primary button", "default": "Shop designs" },
+    { "type": "url", "id": "button_1_link", "label": "Primary button link" },
+    { "type": "text", "id": "button_2_text", "label": "Secondary button", "default": "Browse catalog" },
+    { "type": "url", "id": "button_2_link", "label": "Secondary button link" },
+    { "type": "header", "content": "Colours" },
+    { "type": "color", "id": "bg_color", "label": "Background", "default": "#000000" },
+    { "type": "color", "id": "text_color", "label": "Text", "default": "#ffffff" },
+    { "type": "color", "id": "accent_color", "label": "Accent", "default": "#fbcd06" },
+    { "type": "header", "content": "Spacing" },
+    { "type": "range", "id": "padding_top", "label": "Padding top", "min": 0, "max": 200, "step": 4, "unit": "px", "default": 96 },
+    { "type": "range", "id": "padding_bottom", "label": "Padding bottom", "min": 0, "max": 200, "step": 4, "unit": "px", "default": 96 },
+    { "type": "text", "id": "custom_class", "label": "Custom class" }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "value", "label": "Value", "default": "64" },
+        { "type": "text", "id": "label", "label": "Label", "default": "Designs" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Mockers hero",
+      "blocks": [
+        { "type": "stat", "settings": { "value": "64", "label": "Designs" } },
+        { "type": "stat", "settings": { "value": "1", "label": "Design · every fit" } },
+        { "type": "stat", "settings": { "value": "EGY", "label": "Streetwear" } }
+      ]
+    }
+  ]
+}
+{% endschema %}

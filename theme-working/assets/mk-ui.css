@@ -1,0 +1,94 @@
+/* Mockers UI additions. Loaded globally from layout/theme.liquid.
+   Kept theme-agnostic where possible: neutral alpha and currentColor rather than
+   hard-coded light/dark values, because the storefront renders dark regardless of
+   the visitor's prefers-color-scheme setting. */
+
+/* ---------------------------------------------------------------
+   Nav: "coming soon" note inside the Tees dropdown.
+   It is a real menu item so it appears in both the desktop dropdown and the
+   mobile drawer, but it points at a #coming-soon fragment purely so there is a
+   stable selector to mute it. Pointer events are off so it reads as a note,
+   not a link. Do not give it href="#" - Minimog reads a bare # as a submenu
+   toggle and will open an empty panel on tap.
+   --------------------------------------------------------------- */
+a[href$="#coming-soon"] {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0.45;
+  font-size: 11px;
+  font-style: italic;
+}
+a[href$="#coming-soon"] span {
+  font-size: inherit;
+  font-style: inherit;
+}
+
+/* ---------------------------------------------------------------
+   Yellow scrolling nav strip under the hero
+   --------------------------------------------------------------- */
+.mk-navmarquee a,
+.mk-navmarquee .m-scrolling-promotion__text {
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.mk-navmarquee a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------------------------------------------------------------
+   Collection page: make the Filters trigger read as a real control
+   --------------------------------------------------------------- */
+.m-collection-toolbar .m-filter-trigger,
+.m-collection-toolbar [data-sidebar-toggle] {
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------
+   Light catalogue.
+   The page ground is #f2f0ed and cards sit on it as white surfaces, so the
+   flat-colour design tiles read the way they do in the reference build.
+   Header, hero, announcement bar and footer stay dark and are unaffected.
+   --------------------------------------------------------------- */
+.m-product-card {
+  background: #fff;
+}
+.m-product-card__content {
+  background: #fff;
+  padding: 14px 14px 16px;
+}
+.m-product-card__name {
+  color: #111;
+}
+.mk-card-eyebrow {
+  color: #111;
+}
+
+/* ---------------------------------------------------------------
+   Header dropdown - fit each entry on one line.
+
+   The garment names gained a "T-Shirt" suffix and no longer fitted the panel.
+   Two separate theme rules caused that, and both have to be undone:
+
+     .m-mega-menu        width:100%; min-width:250px   -> panel stuck at 250px
+     .m-sub-menu__item>a overflow:hidden               -> crops once it cannot wrap
+
+   So width alone folds the text, and nowrap alone crops it. Sizing the panel to
+   its longest entry and letting the link overflow fixes both. min-width keeps a
+   short menu no narrower than the theme intended.
+
+   Scoped to --dropdown (simple link lists like Tees and Accessories). Real mega
+   menus use --mega and keep the theme's column maths untouched.
+   --------------------------------------------------------------- */
+.m-menu__item--dropdown .m-mega-menu {
+  width: max-content;
+  min-width: 250px;
+}
+.m-menu__item--dropdown .m-sub-menu__item--level-1 > .m-menu__link {
+  overflow: visible;
+  white-space: nowrap;
+}

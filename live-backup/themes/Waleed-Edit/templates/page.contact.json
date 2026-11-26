@@ -1,0 +1,93 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "page-contact",
+      "settings": {
+        "container": "container"
+      }
+    },
+    "image_with_text_2_ERnMFE": {
+      "type": "image-with-text-2",
+      "settings": {
+        "container": "w-full",
+        "hero_size": "adapt",
+        "show_overlay": true,
+        "image": "shopify://shop_images/Secure_your_spot_in_MOCKERS_society_lounge._1.png",
+        "bg_position": "center",
+        "image_link": "",
+        "parallax": false,
+        "content_in_container": false,
+        "content_position": "center middle",
+        "text_alignment": "center",
+        "text_size": "medium",
+        "text_color": "white",
+        "title": "",
+        "subtitle": "",
+        "text": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "m-button--primary",
+        "button_size": "",
+        "text_alignment_mobile": "center",
+        "use_content_above": false,
+        "custom_class": "",
+        "animations": "inherit",
+        "enable_bg_zoom_effect": true
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "blocks": {
+        "text-block-2": {
+          "type": "textblock",
+          "settings": {
+            "title": "Email:",
+            "content": "<p></p><p>Help@mockers.shop</p>"
+          }
+        },
+        "text-block-3": {
+          "type": "socialmedia",
+          "settings": {
+            "title": "Social Media"
+          }
+        },
+        "text-block-4": {
+          "type": "textblock",
+          "disabled": true,
+          "settings": {
+            "title": "We're Open",
+            "content": "<p>Our store has re-opened for shopping, exchanges</p><p>Every day 11am to 7pm</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text-block-2",
+        "text-block-3",
+        "text-block-4"
+      ],
+      "settings": {
+        "container": "container",
+        "title": "We would love to hear from you.",
+        "description": "<p>If you’ve got great products your making or looking to work with us then drop us a line.</p>",
+        "show_name": true,
+        "show_phone": false,
+        "show_signup_email": true,
+        "animations": "inherit"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_2_ERnMFE",
+    "contact-form"
+  ]
+}

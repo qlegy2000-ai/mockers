@@ -1,0 +1,116 @@
+{%- comment -%}
+  mk-currency-hint.liquid — shows an approximate local-currency figure beside the EGP price.
+
+  The store can only PRESENT and CHARGE in EGP: Shopify ties multi-currency to Shopify
+  Payments, which is not available in Egypt (shopifyPaymentsAccount is null and
+  enabledPresentmentCurrencies is ["EGP"]). So this does not convert anything at
+  checkout — it only gives a visitor a number in a currency they can judge, and says
+  plainly that the charge is in EGP.
+
+  Each open country maps to its own currency: SAR in Saudi, AED in the UAE, EUR across
+  the eurozone, SEK in Sweden, TRY in Turkey, and so on — 42 countries, 24 currencies.
+  Egypt sees nothing extra, because EGP is already the price.
+
+  RATES ARE STATIC and were taken on Thu, 12 Nov 2026. They drift. Refresh them by
+  replacing the RATES object below with fresh figures (base EGP), e.g. from
+  https://open.er-api.com/v6/latest/EGP — roughly monthly is fine for an estimate,
+  and the +25% market uplift already absorbs normal movement.
+
+  TO REMOVE: delete this file and the {% raw %}{% render 'mk-currency-hint' %}{% endraw %}
+  line in layout/theme.liquid.
+{%- endcomment -%}
+
+{%- assign mk_country = localization.country.iso_code -%}
+{%- if mk_country != 'EG' -%}
+<script>
+  (function () {
+    var COUNTRY = {{ mk_country | json }};
+    var CMAP  = {AE:"AED", AT:"EUR", BE:"EUR", BG:"EUR", BH:"BHD", BY:"BYN", CH:"CHF", CZ:"CZK", DE:"EUR", DK:"DKK", EE:"EUR", ES:"EUR", FI:"EUR", GE:"GEL", GR:"EUR", HR:"EUR", HU:"HUF", IE:"EUR", IS:"ISK", IT:"EUR", JE:"GBP", KW:"KWD", LT:"EUR", LU:"EUR", LV:"EUR", MD:"MDL", ME:"EUR", MK:"MKD", MT:"EUR", NL:"EUR", NO:"NOK", OM:"OMR", PL:"PLN", PT:"EUR", QA:"QAR", RO:"RON", RS:"RSD", SA:"SAR", SE:"SEK", SI:"EUR", SK:"EUR", TR:"TRY"};
+    var RATES = {AED:0.068583, BHD:0.007022, BYN:0.056126, CHF:0.015497, CZK:0.409098, DKK:0.125484, EUR:0.016798, GBP:0.01405, GEL:0.048507, HUF:6.12619, ISK:2.295807, KWD:0.005797, MDL:0.336296, MKD:1.022455, NOK:0.178212, OMR:0.00718, PLN:0.074105, QAR:0.067976, RON:0.089716, RSD:1.970005, SAR:0.07003, SEK:0.185436, TRY:0.938368};                       // 1 EGP = N of each currency
+    var cur = CMAP[COUNTRY];
+    var rate = cur && RATES[cur];
+    if (!rate) return;                         // unknown country: show nothing
+
+    var fmt0 = new Intl.NumberFormat('en', {style:'currency', currency:cur, minimumFractionDigits:0, maximumFractionDigits:0});
+    var fmt2 = new Intl.NumberFormat('en', {style:'currency', currency:cur, minimumFractionDigits:2, maximumFractionDigits:2});
+
+    function money(txt) {
+      // "LE 1,998.75" -> 1998.75 ; ignores anything without digits
+      var m = String(txt).replace(/[^0-9.,]/g, '').replace(/,/g, '');
+      var n = parseFloat(m);
+      return isFinite(n) ? n : null;
+    }
+
+    function visible(el) { return el && el.offsetParent !== null; }
+
+    // the price actually charged, not the struck-through compare-at
+    function priceEl(root) {
+      var el = root.querySelector('.m-price__sale .m-price-item--last');
+      if (visible(el)) return el;
+      el = root.querySelector('.m-price__regular .m-price-item--regular');
+      if (visible(el)) return el;
+      var items = root.querySelectorAll('.m-price-item');
+      for (var i = 0; i < items.length; i++) {
+        if (items[i].closest('s')) continue;
+        if (visible(items[i])) return items[i];
+      }
+      return null;
+    }
+
+    function label(v) {
+      return (v >= 100 ? fmt0 : fmt2).format(v);
+    }
+
+    function decorate(root) {
+      var el = priceEl(root);
+      if (!el) return;
+      var egp = money(el.textContent);
+      if (egp === null || egp <= 0) return;
+
+      var tag = root.querySelector(':scope > .mk-fx');
+      if (tag && tag.getAttribute('data-egp') === String(egp)) return;   // unchanged
+      if (!tag) {
+        tag = document.createElement('span');
+        tag.className = 'mk-fx';
+        root.appendChild(tag);
+      }
+      tag.setAttribute('data-egp', String(egp));
+
+      // spell out the charging currency where the customer is deciding to buy
+      var onProduct = !!root.closest('form[action*="/cart/add"], .m-product-info, .m-product__info');
+      tag.textContent = '\u2248 ' + label(egp * rate) + (onProduct ? ' \u00b7 charged in EGP' : '');
+      tag.title = 'Approximate ' + cur + '. You will be charged in EGP.';
+    }
+
+    function run() {
+      var blocks = document.querySelectorAll('.m-price');
+      for (var i = 0; i < blocks.length; i++) decorate(blocks[i]);
+    }
+
+    function ready(fn) {
+      if (document.readyState !== 'loading') fn();
+      else document.addEventListener('DOMContentLoaded', fn);
+    }
+
+    ready(function () {
+      run();
+      // quick view, cart drawer and variant changes re-render prices
+      var t;
+      new MutationObserver(function () {
+        clearTimeout(t);
+        t = setTimeout(run, 120);
+      }).observe(document.body, {childList: true, subtree: true});
+    });
+  })();
+</script>
+<style>
+  .mk-fx {
+    display: inline-block;
+    margin-inline-start: 7px;
+    font-size: .82em;
+    font-weight: 400;
+    opacity: .68;
+    white-space: nowrap;
+  }
+</style>
+{%- endif -%}

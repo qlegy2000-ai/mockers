@@ -1,0 +1,2108 @@
+{
+ "adhd": [
+  {
+   "handle": "adhd-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "adhd-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "adhd-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "adhd-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "adhd-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "andy": [
+  {
+   "handle": "andy-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "andy-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "andy-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "andy-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "andy-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "andy-the-office": [
+  {
+   "handle": "andy-the-office-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "andy-the-office-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "andy-the-office-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "andy-the-office-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "andy-the-office-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "anti-stalking": [
+  {
+   "handle": "anti-stalking-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "anti-stalking-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "anti-stalking-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "anti-stalking-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "anti-stalking-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "anxiety": [
+  {
+   "handle": "anxiety-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "anxiety-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "anxiety-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "anxiety-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "anxiety-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "breaking-sad": [
+  {
+   "handle": "breaking-sad-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "breaking-sad-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "breaking-sad-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "breaking-sad-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "breaking-sad-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "c-o-d": [
+  {
+   "handle": "c-o-d-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "c-o-d-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "c-o-d-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "c-o-d-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "c-o-d-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "capitalism": [
+  {
+   "handle": "capitalism-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "capitalism-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "capitalism-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "capitalism-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "capitalism-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "comma-sutra": [
+  {
+   "handle": "comma-sutra-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "comma-sutra-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "comma-sutra-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "comma-sutra-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "comma-sutra-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "crocs": [
+  {
+   "handle": "crocs-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "crocs-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "crocs-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "crocs-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "crocs-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "dear-music": [
+  {
+   "handle": "dear-music-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "dear-music-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "dear-music-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "dear-music-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "dear-music-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "devil-inside": [
+  {
+   "handle": "devil-inside-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "devil-inside-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "devil-inside-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "devil-inside-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "devil-inside-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "diet-joke": [
+  {
+   "handle": "diet-joke-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "diet-joke-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "diet-joke-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "diet-joke-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "diet-joke-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "disappointed-but-not-surprised": [
+  {
+   "handle": "disappointed-but-not-surprised-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "disappointed-but-not-surprised-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "disappointed-but-not-surprised-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "disappointed-but-not-surprised-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "disappointed-but-not-surprised-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "divers-evolution": [
+  {
+   "handle": "divers-evolution-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "divers-evolution-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "divers-evolution-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "divers-evolution-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "divers-evolution-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "drunkin": [
+  {
+   "handle": "drunkin-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "drunkin-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "drunkin-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "drunkin-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "drunkin-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "eww-earth": [
+  {
+   "handle": "eww-earth-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "eww-earth-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "eww-earth-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "eww-earth-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "eww-earth-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "fail": [
+  {
+   "handle": "fail-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "fail-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "fail-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "fail-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "fail-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "fedup": [
+  {
+   "handle": "fedup-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "fedup-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "fedup-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "fedup-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "fedup-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "five-beers": [
+  {
+   "handle": "five-beers-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "five-beers-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "five-beers-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "five-beers-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "five-beers-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "funny-how": [
+  {
+   "handle": "funny-how-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "funny-how-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "funny-how-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "funny-how-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "funny-how-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "get-a-helmet": [
+  {
+   "handle": "get-a-helmet-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "get-a-helmet-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "get-a-helmet-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "get-a-helmet-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "get-a-helmet-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "grumpy-owl": [
+  {
+   "handle": "grumpy-owl-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "grumpy-owl-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "grumpy-owl-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "grumpy-owl-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "grumpy-owl-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "hang-on": [
+  {
+   "handle": "hang-on-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "hang-on-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "hang-on-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "hang-on-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "hang-on-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "hope": [
+  {
+   "handle": "hope-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "hope-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "hope-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "hope-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "hope-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "humans": [
+  {
+   "handle": "humans-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "humans-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "humans-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "humans-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "humans-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "i-choose-violance": [
+  {
+   "handle": "i-choose-violance-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "i-choose-violance-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "i-choose-violance-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "i-choose-violance-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "i-choose-violance-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "i-love-your-personality": [
+  {
+   "handle": "i-love-your-personality-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "i-love-your-personality-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "i-love-your-personality-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "i-love-your-personality-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "i-love-your-personality-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "if-only": [
+  {
+   "handle": "if-only-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "if-only-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "if-only-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "if-only-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "if-only-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "illegal": [
+  {
+   "handle": "illegal-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "illegal-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "illegal-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "illegal-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "illegal-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "im-not-judgemantal": [
+  {
+   "handle": "im-not-judgemantal-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "im-not-judgemantal-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "im-not-judgemantal-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "im-not-judgemantal-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "im-not-judgemantal-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "into-resting": [
+  {
+   "handle": "into-resting-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "into-resting-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "into-resting-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "into-resting-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "into-resting-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "italien": [
+  {
+   "handle": "italien-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "italien-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "italien-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "italien-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "italien-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "jomo": [
+  {
+   "handle": "jomo-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "jomo-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "jomo-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "jomo-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "jomo-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "kill-bic": [
+  {
+   "handle": "kill-bic-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "kill-bic-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "kill-bic-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "kill-bic-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "kill-bic-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "led-zep": [
+  {
+   "handle": "led-zep-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "led-zep-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "led-zep-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "led-zep-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "led-zep-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "lies": [
+  {
+   "handle": "lies-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "lies-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "lies-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "lies-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "lies-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "middle-fingers": [
+  {
+   "handle": "middle-fingers-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "middle-fingers-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "middle-fingers-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "middle-fingers-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "middle-fingers-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "millennials": [
+  {
+   "handle": "millennials-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "millennials-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "millennials-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "millennials-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "millennials-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "mixed-up": [
+  {
+   "handle": "mixed-up-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "mixed-up-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "mixed-up-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "mixed-up-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "mixed-up-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "moana-chicken": [
+  {
+   "handle": "moana-chicken-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "moana-chicken-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "moana-chicken-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "moana-chicken-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "moana-chicken-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "mommy-issues": [
+  {
+   "handle": "mommy-issues-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "mommy-issues-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "mommy-issues-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "mommy-issues-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "mommy-issues-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "mood-swings": [
+  {
+   "handle": "mood-swings-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "mood-swings-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "mood-swings-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "mood-swings-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "mood-swings-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "must-be-ai": [
+  {
+   "handle": "must-be-ai-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "must-be-ai-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "must-be-ai-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "must-be-ai-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "must-be-ai-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "my-therapist": [
+  {
+   "handle": "my-therapist-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "my-therapist-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "my-therapist-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "my-therapist-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "my-therapist-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "national-psychotic": [
+  {
+   "handle": "national-psychotic-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "national-psychotic-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "national-psychotic-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "national-psychotic-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "national-psychotic-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "natural-stupidity": [
+  {
+   "handle": "natural-stupidity-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "natural-stupidity-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "natural-stupidity-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "natural-stupidity-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "natural-stupidity-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "need-weed": [
+  {
+   "handle": "need-weed-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "need-weed-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "need-weed-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "need-weed-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "need-weed-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "nudism": [
+  {
+   "handle": "nudism-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "nudism-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "nudism-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "nudism-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "nudism-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "old-people": [
+  {
+   "handle": "old-people-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "old-people-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "old-people-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "old-people-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "old-people-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "palestine": [
+  {
+   "handle": "palestine-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "palestine-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "palestine-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "palestine-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "palestine-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "paranoid": [
+  {
+   "handle": "paranoid-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "paranoid-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "paranoid-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "paranoid-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "paranoid-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "personality-disorder": [
+  {
+   "handle": "personality-disorder-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "personality-disorder-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "personality-disorder-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "personality-disorder-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "personality-disorder-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "pros-cons": [
+  {
+   "handle": "pros-cons-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "pros-cons-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "pros-cons-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "pros-cons-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "pros-cons-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "pumba": [
+  {
+   "handle": "pumba-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "pumba-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "pumba-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "pumba-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "pumba-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "reality-called": [
+  {
+   "handle": "reality-called-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "reality-called-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "reality-called-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "reality-called-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "reality-called-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "rock-paper-liquor": [
+  {
+   "handle": "rock-paper-liquor-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "rock-paper-liquor-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "rock-paper-liquor-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "rock-paper-liquor-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "rock-paper-liquor-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "rolex": [
+  {
+   "handle": "rolex-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "rolex-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "rolex-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "rolex-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "rolex-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "see-right-through-you": [
+  {
+   "handle": "see-right-through-you-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "see-right-through-you-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "see-right-through-you-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "see-right-through-you-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "see-right-through-you-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "serious-lee": [
+  {
+   "handle": "serious-lee-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "serious-lee-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "serious-lee-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "serious-lee-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "serious-lee-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "shit": [
+  {
+   "handle": "shit-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "shit-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "shit-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "shit-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "shit-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "sorry-princess": [
+  {
+   "handle": "sorry-princess-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "sorry-princess-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "sorry-princess-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "sorry-princess-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "sorry-princess-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "stoned": [
+  {
+   "handle": "stoned-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "stoned-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "stoned-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "stoned-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "stoned-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "stop-wars": [
+  {
+   "handle": "stop-wars-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "stop-wars-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "stop-wars-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "stop-wars-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "stop-wars-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "stranger-shit": [
+  {
+   "handle": "stranger-shit-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "stranger-shit-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "stranger-shit-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "stranger-shit-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "stranger-shit-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "suckers": [
+  {
+   "handle": "suckers-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "suckers-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "suckers-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "suckers-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "suckers-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "telefreak": [
+  {
+   "handle": "telefreak-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "telefreak-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "telefreak-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "telefreak-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "telefreak-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "tequla": [
+  {
+   "handle": "tequla-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "tequla-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "tequla-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "tequla-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "tequla-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "the-nicest-asshole": [
+  {
+   "handle": "the-nicest-asshole-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "the-nicest-asshole-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "the-nicest-asshole-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "the-nicest-asshole-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "the-nicest-asshole-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "the-rolling-eyes": [
+  {
+   "handle": "the-rolling-eyes-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "the-rolling-eyes-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "the-rolling-eyes-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "the-rolling-eyes-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "the-rolling-eyes-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "trans-parent": [
+  {
+   "handle": "trans-parent-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "trans-parent-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "trans-parent-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "trans-parent-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "trans-parent-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "trust-the-process": [
+  {
+   "handle": "trust-the-process-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "trust-the-process-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "trust-the-process-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "trust-the-process-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "trust-the-process-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "try-me": [
+  {
+   "handle": "try-me-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "try-me-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "try-me-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "try-me-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "try-me-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "uncle-wes": [
+  {
+   "handle": "uncle-wes-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "uncle-wes-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "uncle-wes-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "uncle-wes-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "uncle-wes-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "veganism": [
+  {
+   "handle": "veganism-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "veganism-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "veganism-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "veganism-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "veganism-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "wish-you-were-beer": [
+  {
+   "handle": "wish-you-were-beer-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "wish-you-were-beer-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "wish-you-were-beer-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "wish-you-were-beer-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "wish-you-were-beer-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "word-filter": [
+  {
+   "handle": "word-filter-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "word-filter-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "word-filter-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "word-filter-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "word-filter-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ],
+ "wtf": [
+  {
+   "handle": "wtf-regular-fit-t-shirt",
+   "style": "Regular Fit T-Shirt",
+   "price": "679.00"
+  },
+  {
+   "handle": "wtf-oversized-light-soft",
+   "style": "Oversized Light-Soft",
+   "price": "778.00"
+  },
+  {
+   "handle": "wtf-oversized-heavy-premium",
+   "style": "Oversized Heavy Premium",
+   "price": "930.00"
+  },
+  {
+   "handle": "wtf-sweatshirt",
+   "style": "Sweatshirt",
+   "price": "1499.00"
+  },
+  {
+   "handle": "wtf-hoodie",
+   "style": "Hoodie",
+   "price": "1599.00"
+  }
+ ]
+}

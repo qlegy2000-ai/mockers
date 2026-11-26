@@ -1,0 +1,101 @@
+{%- comment -%}
+  mk-market-test.liquid  —  TEMPORARY market/country switcher for testing.
+
+  Why it exists: Shopify picks the market from the visitor's IP, so checking that
+  a country gets the right price normally means a VPN. This panel switches the
+  storefront country directly, through Shopify's own /localization form, so prices
+  and checkout shipping can be verified from one machine.
+
+  It is hidden from customers. The markup always renders but is display:none until
+  a visitor opts in, and opting in is only possible by typing a URL:
+
+      https://mockers.shop/?mktest=1     show the panel (remembered on this browser)
+      https://mockers.shop/?mktest=0     hide it again and forget
+
+  The flag lives in localStorage, so it survives page changes on that one browser
+  and reaches nobody else. No cookie, no account, nothing server-side.
+
+  TO REMOVE WHEN TESTING IS DONE: delete this file and the single
+  {% raw %}{% render 'mk-market-test' %}{% endraw %} line at the end of layout/theme.liquid.
+{%- endcomment -%}
+
+<div id="mk-market-test" hidden>
+  <div class="mk-mt__bar">
+    <span class="mk-mt__dot"></span>
+    <span class="mk-mt__label">Test market</span>
+    <button type="button" class="mk-mt__x" aria-label="Hide market tester">&times;</button>
+  </div>
+
+  {%- form 'localization', id: 'mk-mt-form' -%}
+    <input type="hidden" name="return_to" value="{{ request.path }}">
+    <select name="country_code" class="mk-mt__select" aria-label="Country">
+      {%- for country in localization.available_countries -%}
+        <option value="{{ country.iso_code }}"
+          {%- if country.iso_code == localization.country.iso_code %} selected{% endif -%}>
+          {{ country.name }} ({{ country.iso_code }})
+        </option>
+      {%- endfor -%}
+    </select>
+  {%- endform -%}
+
+  <div class="mk-mt__now">
+    now: <strong>{{ localization.country.name }}</strong>
+    &middot; {{ localization.country.currency.iso_code }}
+    &middot; {{ localization.available_countries.size }} open
+  </div>
+</div>
+
+<style>
+  #mk-market-test[hidden] { display: none; }
+  #mk-market-test {
+    position: fixed; z-index: 2147483000; left: 16px; bottom: 16px;
+    width: 232px; padding: 10px 12px 11px;
+    background: #0d2b47; color: #fff; border-radius: 10px;
+    box-shadow: 0 8px 28px rgba(0,0,0,.35);
+    font: 500 12px/1.35 -apple-system, "Helvetica Neue", Arial, sans-serif;
+  }
+  .mk-mt__bar { display: flex; align-items: center; gap: 7px; margin-bottom: 8px; }
+  .mk-mt__dot { width: 7px; height: 7px; border-radius: 50%; background: #29b6f6; flex: none; }
+  .mk-mt__label { flex: 1; font-size: 10px; letter-spacing: 1.2px; text-transform: uppercase; color: #8fd3ff; }
+  .mk-mt__x {
+    appearance: none; border: 0; background: transparent; color: #8fd3ff;
+    font-size: 17px; line-height: 1; cursor: pointer; padding: 0 2px;
+  }
+  .mk-mt__x:hover { color: #fff; }
+  #mk-mt-form { margin: 0; }
+  .mk-mt__select {
+    width: 100%; padding: 7px 9px; border-radius: 6px;
+    border: 1px solid rgba(255,255,255,.28); background: #123a5e; color: #fff;
+    font: inherit; cursor: pointer;
+  }
+  .mk-mt__now { margin-top: 7px; font-size: 11px; color: #bcdff5; }
+  .mk-mt__now strong { color: #fff; }
+  @media print { #mk-market-test { display: none !important; } }
+</style>
+
+<script>
+  (function () {
+    var KEY = 'mk-market-test';
+    var el = document.getElementById('mk-market-test');
+    if (!el) return;
+
+    // ?mktest=1 turns it on for this browser, ?mktest=0 turns it off.
+    var flag = new URLSearchParams(window.location.search).get('mktest');
+    try {
+      if (flag === '1') localStorage.setItem(KEY, '1');
+      else if (flag === '0') localStorage.removeItem(KEY);
+      if (localStorage.getItem(KEY) !== '1') return;        // stays hidden
+    } catch (e) { return; }                                  // private mode: stay hidden
+
+    el.hidden = false;
+
+    // changing the country posts Shopify's own localization form
+    var sel = el.querySelector('.mk-mt__select');
+    if (sel) sel.addEventListener('change', function () { sel.form.submit(); });
+
+    el.querySelector('.mk-mt__x').addEventListener('click', function () {
+      try { localStorage.removeItem(KEY); } catch (e) {}
+      el.hidden = true;
+    });
+  })();
+</script>

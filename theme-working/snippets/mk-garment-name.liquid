@@ -1,0 +1,22 @@
+{%- comment -%}
+  Customer-facing name for a garment.
+
+  custom.style and productType stay as the internal keys ("Oversized Light-Soft"),
+  because every automated collection matches on productType and every script and
+  swatch rule keys on style. But "Oversized Light-Soft" does not tell a shopper what
+  the garment is, so anywhere a name is SHOWN it goes through here instead.
+
+  Accepts: style (string). Falls back to the style itself, so a garment added later
+  still renders something sensible.
+{%- endcomment -%}
+{%- liquid
+  case style
+    when 'Oversized Light-Soft'
+      assign out = 'Oversized Light-Soft T-Shirt'
+    when 'Oversized Heavy Premium'
+      assign out = 'Oversized Heavy Premium T-Shirt'
+    else
+      assign out = style
+  endcase
+-%}
+{{- out -}}

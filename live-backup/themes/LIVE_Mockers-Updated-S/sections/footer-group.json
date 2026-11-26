@@ -1,0 +1,139 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer",
+  "sections": {
+    "mobile-sticky-bar": {
+      "type": "mobile-sticky-bar",
+      "settings": {
+        "show_mobile_sticky": true,
+        "show_home_icon": true,
+        "show_collection_icon": true,
+        "show_cart_icon": true,
+        "show_search_icon": true,
+        "show_account_icon": false,
+        "show_wishlist_icon": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "custom_text_JNBwPy": {
+          "type": "custom_text",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/MOCKERS_1_dbf9df5c-8a56-4451-b317-f1d1d4a7339b.png",
+            "image_max": "600px",
+            "description": "",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        },
+        "7ebc2f78-975b-4a81-b874-103c3355a866": {
+          "type": "menu",
+          "settings": {
+            "menu": "footer",
+            "title": "",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        },
+        "49e72833-c68f-4a7b-ab64-3ef0cae99bcb": {
+          "type": "menu",
+          "settings": {
+            "menu": "brand-menu",
+            "title": "Information",
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        },
+        "93571032-b171-4c66-8b3e-96cd91946363": {
+          "type": "our_store",
+          "settings": {
+            "title": "Our Socials",
+            "description": "",
+            "show_email": false,
+            "show_phone": false,
+            "show_socials_link": true,
+            "width": "25%",
+            "order_first": false,
+            "open_default": false
+          }
+        }
+      },
+      "block_order": [
+        "custom_text_JNBwPy",
+        "7ebc2f78-975b-4a81-b874-103c3355a866",
+        "49e72833-c68f-4a7b-ab64-3ef0cae99bcb",
+        "93571032-b171-4c66-8b3e-96cd91946363"
+      ],
+      "settings": {
+        "design": "footer-1",
+        "container": "container-fluid",
+        "bordered": false,
+        "copyright": "© Mockers Since 2023, but have been <strong>MOCKING</strong> for life",
+        "show_country_selector": false,
+        "show_currency_selector": false,
+        "show_language_selector": false,
+        "show_social_links": true,
+        "enable_follow_on_shop": false,
+        "show_payment_icons": true,
+        "payment_icons_width": 300
+      }
+    },
+    "age-verifier-popup": {
+      "type": "age-verifier-popup",
+      "blocks": {
+        "block-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Confirm your age"
+          }
+        },
+        "block-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Are you 18 years old or older?</p>"
+          }
+        },
+        "block-3": {
+          "type": "buttons",
+          "settings": {
+            "decline_button": "No, I'm not",
+            "approve_button": "Yes, I am"
+          }
+        }
+      },
+      "block_order": [
+        "block-1",
+        "block-2",
+        "block-3"
+      ],
+      "disabled": true,
+      "settings": {
+        "design_mode": false,
+        "enable": false,
+        "bg_blur": true,
+        "decline_heading": "Come back when you're older",
+        "decline_content": "<p>Sorry, the content of this store can't be seen by a younger audience. Come back when you're older.</p>",
+        "return_button": "Oops, I entered incorrectly"
+      }
+    }
+  },
+  "order": [
+    "mobile-sticky-bar",
+    "footer",
+    "age-verifier-popup"
+  ]
+}

@@ -1,0 +1,72 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1758818261e0ce743d": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_ea06cf7_HAn8QL": {
+          "type": "ai_gen_block_ea06cf7",
+          "settings": {
+            "notice_text": "<p><strong>All sale items are final</strong> — no returns or exchanges, because amazing deals don't come with a rewind button.</p>",
+            "show_icon": true,
+            "icon_type": "megaphone",
+            "icon_size": 40,
+            "icon_color": "#fbcd06",
+            "background_color": "#000000",
+            "text_color": "#ffffff",
+            "highlight_color": "#fbcd06",
+            "border_color": "#fbcd06",
+            "border_width": 0,
+            "border_radius": 8,
+            "font_size": 19,
+            "font_weight": "500",
+            "text_alignment": "center",
+            "padding_vertical": 14,
+            "padding_horizontal": 30,
+            "margin_top": 30,
+            "margin_bottom": 20,
+            "animation_duration": 5,
+            "animation_delay": 2,
+            "show_close_button": false,
+            "remember_close": false
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_ea06cf7_HAn8QL"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "cart-template",
+      "settings": {}
+    },
+    "recent-viewed-products": {
+      "type": "recent-viewed-products",
+      "settings": {
+        "container": "container",
+        "heading": "Recently Viewed Products",
+        "heading_size": "h3",
+        "text_align": "left",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": 30,
+        "enable_slider": true
+      }
+    }
+  },
+  "order": [
+    "1758818261e0ce743d",
+    "main",
+    "recent-viewed-products"
+  ]
+}

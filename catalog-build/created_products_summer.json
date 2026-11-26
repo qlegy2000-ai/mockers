@@ -1,0 +1,736 @@
+[
+ {
+  "handle": "andy-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326988718249",
+  "style": "Oversized Heavy Premium",
+  "design": "andy",
+  "colours": [
+   "Black",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "anxiety-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326988751017",
+  "style": "Regular Fit T-Shirt",
+  "design": "anxiety",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "c-o-d-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326988783785",
+  "style": "Regular Fit T-Shirt",
+  "design": "c-o-d",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "c-o-d-oversized-light-soft",
+  "id": "gid://shopify/Product/10326988816553",
+  "style": "Oversized Light-Soft",
+  "design": "c-o-d",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Earth Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL"
+  ]
+ },
+ {
+  "handle": "c-o-d-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326988882089",
+  "style": "Oversized Heavy Premium",
+  "design": "c-o-d",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "crocs-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326988914857",
+  "style": "Oversized Heavy Premium",
+  "design": "crocs",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "drunkin-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326988947625",
+  "style": "Oversized Heavy Premium",
+  "design": "drunkin",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "five-beers-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326988980393",
+  "style": "Regular Fit T-Shirt",
+  "design": "five-beers",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "funny-how-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989013161",
+  "style": "Oversized Heavy Premium",
+  "design": "funny-how",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "get-a-helmet-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989078697",
+  "style": "Regular Fit T-Shirt",
+  "design": "get-a-helmet",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "get-a-helmet-oversized-light-soft",
+  "id": "gid://shopify/Product/10326989144233",
+  "style": "Oversized Light-Soft",
+  "design": "get-a-helmet",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Earth Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL"
+  ]
+ },
+ {
+  "handle": "get-a-helmet-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989177001",
+  "style": "Oversized Heavy Premium",
+  "design": "get-a-helmet",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "if-only-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989209769",
+  "style": "Regular Fit T-Shirt",
+  "design": "if-only",
+  "colours": [
+   "Black",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "illegal-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989242537",
+  "style": "Regular Fit T-Shirt",
+  "design": "illegal",
+  "colours": [
+   "Black",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "italien-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989308073",
+  "style": "Regular Fit T-Shirt",
+  "design": "italien",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "jomo-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989340841",
+  "style": "Oversized Heavy Premium",
+  "design": "jomo",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "led-zep-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989373609",
+  "style": "Regular Fit T-Shirt",
+  "design": "led-zep",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "millennials-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989406377",
+  "style": "Oversized Heavy Premium",
+  "design": "millennials",
+  "colours": [
+   "Black",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "moana-chicken-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989439145",
+  "style": "Regular Fit T-Shirt",
+  "design": "moana-chicken",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "nudism-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989504681",
+  "style": "Regular Fit T-Shirt",
+  "design": "nudism",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "old-people-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989537449",
+  "style": "Regular Fit T-Shirt",
+  "design": "old-people",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "palestine-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989570217",
+  "style": "Regular Fit T-Shirt",
+  "design": "palestine",
+  "colours": [
+   "Black",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "personality-disorder-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989635753",
+  "style": "Regular Fit T-Shirt",
+  "design": "personality-disorder",
+  "colours": [
+   "Black",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "reality-called-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989668521",
+  "style": "Regular Fit T-Shirt",
+  "design": "reality-called",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "rock-paper-liquor-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989701289",
+  "style": "Regular Fit T-Shirt",
+  "design": "rock-paper-liquor",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "rolex-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989734057",
+  "style": "Oversized Heavy Premium",
+  "design": "rolex",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "see-right-through-you-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989766825",
+  "style": "Regular Fit T-Shirt",
+  "design": "see-right-through-you",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "see-right-through-you-oversized-light-soft",
+  "id": "gid://shopify/Product/10326989799593",
+  "style": "Oversized Light-Soft",
+  "design": "see-right-through-you",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Earth Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL",
+   "2XL"
+  ]
+ },
+ {
+  "handle": "see-right-through-you-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989832361",
+  "style": "Oversized Heavy Premium",
+  "design": "see-right-through-you",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "shit-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989865129",
+  "style": "Oversized Heavy Premium",
+  "design": "shit",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "sorry-princess-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989897897",
+  "style": "Regular Fit T-Shirt",
+  "design": "sorry-princess",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "stoned-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989930665",
+  "style": "Oversized Heavy Premium",
+  "design": "stoned",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "telefreak-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326989963433",
+  "style": "Oversized Heavy Premium",
+  "design": "telefreak",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "tequla-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326989996201",
+  "style": "Regular Fit T-Shirt",
+  "design": "tequla",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "try-me-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326990028969",
+  "style": "Regular Fit T-Shirt",
+  "design": "try-me",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "uncle-wes-regular-fit-t-shirt",
+  "id": "gid://shopify/Product/10326990094505",
+  "style": "Regular Fit T-Shirt",
+  "design": "uncle-wes",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Cashmere Pink",
+   "Aegean Blue",
+   "Pistache Green"
+  ],
+  "sizes": [
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ },
+ {
+  "handle": "wtf-oversized-heavy-premium",
+  "id": "gid://shopify/Product/10326990127273",
+  "style": "Oversized Heavy Premium",
+  "design": "wtf",
+  "colours": [
+   "Black",
+   "White",
+   "Burgundy",
+   "Pink",
+   "Royal Dark Green"
+  ],
+  "sizes": [
+   "XS",
+   "S",
+   "M",
+   "L",
+   "XL"
+  ]
+ }
+]

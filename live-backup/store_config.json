@@ -1,0 +1,952 @@
+{
+ "collections": [
+  {
+   "id": "gid://shopify/Collection/275767918634",
+   "handle": "frontpage",
+   "title": "Home page",
+   "sortOrder": "BEST_SELLING",
+   "ruleSet": null,
+   "productsCount": {
+    "count": 26
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/276575715370",
+   "handle": "all-designs",
+   "title": "All Designs",
+   "sortOrder": "BEST_SELLING",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "TYPE",
+      "relation": "EQUALS",
+      "condition": "Design"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 64
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/305130045482",
+   "handle": "new-designs",
+   "title": "New Designs",
+   "sortOrder": "BEST_SELLING",
+   "ruleSet": null,
+   "productsCount": {
+    "count": 15
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/306989367338",
+   "handle": "hoodies",
+   "title": "Hoodies",
+   "sortOrder": "BEST_SELLING",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "hood"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 64
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/309245739050",
+   "handle": "summer-collection",
+   "title": "Summer Collection",
+   "sortOrder": "MANUAL",
+   "ruleSet": {
+    "appliedDisjunctively": true,
+    "rules": [
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "t-shirt"
+     },
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "Oversized"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 100
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/309322645546",
+   "handle": "lifestyle",
+   "title": "Lifestyle",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": null,
+   "productsCount": {
+    "count": 0
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/309581709354",
+   "handle": "accessories",
+   "title": "Accessories",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": null,
+   "productsCount": {
+    "count": 7
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/309595537450",
+   "handle": "winter-collection",
+   "title": "Winter Collection",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "Hoodies"
+     },
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "Sweatshirts"
+     },
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "Sweatpants"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 0
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/310345990186",
+   "handle": "summer-shirts",
+   "title": "Summer Shirts",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "VARIANT_TITLE",
+      "relation": "CONTAINS",
+      "condition": "shirt"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 85
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/311371169834",
+   "handle": "double-side-bucket-hats",
+   "title": "Double Side Bucket Hats",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "TITLE",
+      "relation": "CONTAINS",
+      "condition": "BUCKET HAT"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 3
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/311371235370",
+   "handle": "thermal-flasks",
+   "title": "Thermal Flasks",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "TITLE",
+      "relation": "CONTAINS",
+      "condition": "thermal flask"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 1
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/311371333674",
+   "handle": "beach-towels",
+   "title": "Beach Towels",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": {
+    "appliedDisjunctively": false,
+    "rules": [
+     {
+      "column": "TITLE",
+      "relation": "CONTAINS",
+      "condition": "Beach towel"
+     }
+    ]
+   },
+   "productsCount": {
+    "count": 3
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/313975963690",
+   "handle": "meta-ad-cat",
+   "title": "Meta ad CAT",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": null,
+   "productsCount": {
+    "count": 114
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  },
+  {
+   "id": "gid://shopify/Collection/314459881514",
+   "handle": "sweatpants",
+   "title": "SWEATPANTS",
+   "sortOrder": "MOST_RELEVANT",
+   "ruleSet": null,
+   "productsCount": {
+    "count": 1
+   },
+   "descriptionHtml": "",
+   "resourcePublications": {
+    "nodes": [
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Online Store"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Point of Sale"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "Facebook & Instagram"
+      }
+     },
+     {
+      "isPublished": true,
+      "publication": {
+       "name": "TikTok"
+      }
+     }
+    ]
+   }
+  }
+ ],
+ "menus": [
+  {
+   "id": "gid://shopify/Menu/188790898730",
+   "handle": "main-menu",
+   "title": "Main menu",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/437957296170",
+     "title": "Home",
+     "url": "/",
+     "type": "FRONTPAGE",
+     "resourceId": null,
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/437957328938",
+     "title": "Featured Designs",
+     "url": "/collections/all",
+     "type": "CATALOG",
+     "resourceId": null,
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/563226935338",
+     "title": "Accessories",
+     "url": "/collections/accessories/Beach-Towels+Flasks+Caps+Hats",
+     "type": "COLLECTION",
+     "resourceId": "gid://shopify/Collection/309581709354",
+     "items": [
+      {
+       "id": "gid://shopify/MenuItem/571092697130",
+       "title": "Thermal Flasks",
+       "url": "/collections/thermal-flasks",
+       "type": "COLLECTION",
+       "resourceId": "gid://shopify/Collection/311371235370",
+       "items": []
+      },
+      {
+       "id": "gid://shopify/MenuItem/571092729898",
+       "title": "Beach towels",
+       "url": "/collections/beach-towels",
+       "type": "COLLECTION",
+       "resourceId": "gid://shopify/Collection/311371333674",
+       "items": []
+      },
+      {
+       "id": "gid://shopify/MenuItem/571092762666",
+       "title": "Bucket Hats",
+       "url": "/collections/double-side-bucket-hats",
+       "type": "COLLECTION",
+       "resourceId": "gid://shopify/Collection/311371169834",
+       "items": []
+      }
+     ]
+    },
+    {
+     "id": "gid://shopify/MenuItem/437957361706",
+     "title": "Contact",
+     "url": "/pages/contact",
+     "type": "PAGE",
+     "resourceId": "gid://shopify/Page/96909033514",
+     "items": []
+    }
+   ]
+  },
+  {
+   "id": "gid://shopify/Menu/188790931498",
+   "handle": "footer",
+   "title": "Customer Care",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/437957394474",
+     "title": "Exchange & Refund Policy",
+     "url": "/policies/refund-policy",
+     "type": "SHOP_POLICY",
+     "resourceId": "gid://shopify/ShopPolicy/25067126826",
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/439605395498",
+     "title": "Shipping Policy",
+     "url": "/policies/shipping-policy",
+     "type": "SHOP_POLICY",
+     "resourceId": "gid://shopify/ShopPolicy/25067225130",
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/439605428266",
+     "title": "Privacy Policy",
+     "url": "/policies/privacy-policy",
+     "type": "SHOP_POLICY",
+     "resourceId": "gid://shopify/ShopPolicy/25067159594",
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/439605461034",
+     "title": "Terms & Conditions",
+     "url": "/policies/terms-of-service",
+     "type": "SHOP_POLICY",
+     "resourceId": "gid://shopify/ShopPolicy/25067192362",
+     "items": []
+    }
+   ]
+  },
+  {
+   "id": "gid://shopify/Menu/189477683242",
+   "handle": "brand-menu",
+   "title": "Brand Menu",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/439605493802",
+     "title": "About Us",
+     "url": "#",
+     "type": "HTTP",
+     "resourceId": null,
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/439605526570",
+     "title": "Contact Us",
+     "url": "#",
+     "type": "HTTP",
+     "resourceId": null,
+     "items": []
+    }
+   ]
+  },
+  {
+   "id": "gid://shopify/Menu/199498334250",
+   "handle": "customer-account-main-menu",
+   "title": "Customer account main menu",
+   "items": [
+    {
+     "id": "gid://shopify/MenuItem/475418525738",
+     "title": "Orders",
+     "url": "https://shopify.com/58697777194/account/orders",
+     "type": "CUSTOMER_ACCOUNT_PAGE",
+     "resourceId": "gid://shopify/CustomerAccountPage/43186618410",
+     "items": []
+    },
+    {
+     "id": "gid://shopify/MenuItem/546177515562",
+     "title": "Profile",
+     "url": "https://shopify.com/58697777194/account/profile",
+     "type": "CUSTOMER_ACCOUNT_PAGE",
+     "resourceId": "gid://shopify/CustomerAccountPage/43186651178",
+     "items": []
+    }
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "id": "gid://shopify/Page/96909033514",
+   "handle": "contact",
+   "title": "Contact",
+   "isPublished": true,
+   "bodySummary": ""
+  },
+  {
+   "id": "gid://shopify/Page/97561116714",
+   "handle": "oversized-t-shirt-description",
+   "title": "Regulal T-shirt Description",
+   "isPublished": true,
+   "bodySummary": "Oversized T-shirt This oversized masterpiece is here to make a statement and tickle your funny bone. With its generous fit and premium quality, it'..."
+  },
+  {
+   "id": "gid://shopify/Page/97561182250",
+   "handle": "hoodie-description",
+   "title": "Hoodie Description",
+   "isPublished": true,
+   "bodySummary": "Oversized Hoodie Experience the epitome of quality and comfort with this exceptional piece. Crafted from 100% Egyptian cotton, renowned for its unr..."
+  },
+  {
+   "id": "gid://shopify/Page/97561215018",
+   "handle": "sweatshirt-description",
+   "title": "Sweatshirt Description",
+   "isPublished": true,
+   "bodySummary": "Sweatshirt Experience the epitome of quality and comfort with this exceptional piece. Crafted from 100% Egyptian cotton, renowned for its unrivaled..."
+  },
+  {
+   "id": "gid://shopify/Page/98939928618",
+   "handle": "oversized-t-shirt-description-1",
+   "title": "Oversized T-shirt Description",
+   "isPublished": true,
+   "bodySummary": "Oversized T-shirt This oversized masterpiece is here to make a statement and tickle your funny bone. With its generous fit and premium quality, it'..."
+  }
+ ],
+ "redirects": [
+  {
+   "id": "gid://shopify/UrlRedirect/375824154666",
+   "path": "/s/924dcb",
+   "target": "https://mockers.shop/?utm_campaign=924dcb&utm_source=shareable_link"
+  }
+ ],
+ "discounts": [
+  {
+   "id": "gid://shopify/DiscountCodeNode/1155131801642",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "SAF100%MOC",
+    "status": "EXPIRED",
+    "startsAt": "2024-08-26T09:52:42Z",
+    "endsAt": "2025-04-13T15:49:00Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1155132096554",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "SAF100%MOCK",
+    "status": "EXPIRED",
+    "startsAt": "2024-08-26T10:04:53Z",
+    "endsAt": "2025-04-13T15:49:00Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1159399309354",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "MARKBYMASSY",
+    "status": "EXPIRED",
+    "startsAt": "2024-09-22T12:11:24Z",
+    "endsAt": "2024-10-22T12:11:11Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountAutomaticNode/1238380216362",
+   "discount": {
+    "__typename": "DiscountAutomaticBasic",
+    "title": "10%Off on checkout",
+    "status": "EXPIRED",
+    "startsAt": "2025-09-17T16:29:19Z",
+    "endsAt": "2025-10-19T16:46:12Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1254701957162",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "MTOHAMY10%",
+    "status": "ACTIVE",
+    "startsAt": "2025-11-07T03:29:02Z",
+    "endsAt": null
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1260389597226",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "SAVE10FREESHIP",
+    "status": "EXPIRED",
+    "startsAt": "2025-12-01T04:30:57Z",
+    "endsAt": "2025-12-02T08:00:59Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1260391759914",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "SAVE%10FREESHIP",
+    "status": "EXPIRED",
+    "startsAt": "2025-12-01T08:00:50Z",
+    "endsAt": "2025-12-02T08:30:59Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1261187825706",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "SAVE10FREESHIP1",
+    "status": "EXPIRED",
+    "startsAt": "2025-12-04T02:12:21Z",
+    "endsAt": "2025-12-05T02:30:59Z"
+   }
+  },
+  {
+   "id": "gid://shopify/DiscountCodeNode/1261551714346",
+   "discount": {
+    "__typename": "DiscountCodeBasic",
+    "title": "SAVE10FREESHIP11",
+    "status": "ACTIVE",
+    "startsAt": "2025-12-05T12:00:32Z",
+    "endsAt": null
+   }
+  }
+ ],
+ "publications": [
+  {
+   "id": "gid://shopify/Publication/94733828138",
+   "name": "Online Store"
+  },
+  {
+   "id": "gid://shopify/Publication/94733959210",
+   "name": "Point of Sale"
+  },
+  {
+   "id": "gid://shopify/Publication/98896674858",
+   "name": "Facebook & Instagram"
+  },
+  {
+   "id": "gid://shopify/Publication/152523505706",
+   "name": "TikTok"
+  }
+ ],
+ "shop": {
+  "name": "mockers-shop",
+  "myshopifyDomain": "mockers-shop.myshopify.com",
+  "currencyCode": "EGP",
+  "ianaTimezone": "Africa/Cairo",
+  "primaryDomain": {
+   "host": "mockers.shop"
+  }
+ },
+ "_captured": "2026-10-04T19:12:57.538566"
+}
