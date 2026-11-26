@@ -6,12 +6,166 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "20a5aaec-bf86-4bab-87d2-ed1e257d48b2": {
       "type": "custom-code",
       "settings": {
         "custom_css": ".m-section {\n  position: relative;\n  z-index: 0;\n  pointer-events: none;\n}\n.m-section * {\n  pointer-events: auto;\n}\n\n\n\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper {\n  background: #fff;\n  border-radius: 8px;\n  color: #000;\n  position: relative;\n  z-index: 0;\n  width: fit-content; \n\n  margin-right: auto; \n}\n\n\n\n@media (min-width: 768px) {\n  \n}\n\n\n\n.m-section {\n  position: relative;\n  z-index: 0;\n  pointer-events: none;\n}\n.m-section * {\n  pointer-events: auto;\n}\n\n.m-footer .m-footer--block .m-footer--block-title {\n  text-transform: uppercase;\n  font-weight: 600;\n}\n.sf-button__big-size .m-button:not(.m-button--link) {\n  border-radius: 8px;\n}\n.sf-button__big-size .m-button.m-button--white {\n  border: 1px solid currentColor;\n  position: relative;\n  box-shadow: none !important;\n}\n.sf-button__big-size .m-button.m-button--white:after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: inherit;\n  border: 1px solid currentColor;\n  border-radius: inherit;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  transform: translate(5px, 5px);\n  transition: all var(--m-duration-default, .25s);\n}\n\n.sf-button__big-size .m-button.m-button--white:hover:after {\n  transform: translate(0);\n}\n\n.sf-custom--countdown .m-countdown-timer__separator {\n  color: var(--color-body-text);\n}\n.sf-custom--countdown {\n  --color-heading-text: #000;\n  --color-body-text: #000;\n  --color-secondary: #000;\n\n  background-image: \n  background-size: cover;\n  background-repeat: no-repeat;\n  background-position: center;\n  position: relative;\n  z-index: 0;\n}\n.sf-custom--countdown .m-section-py {\n  padding-top: 20px;\n  padding-bottom: 60px;\n}\n.sf-custom--image-card {\n  position: relative;\n}\n\n.sf-custom--image-card .m-image-card {\n  border-radius: 8px;\n  overflow: hidden;\n}\n\n.sf-custom--image-card .m-custom-content__wrapper {\n  position: relative;\n}\n\n.sf-custom--image-card .sf-custom__block--image-left,\n.sf-custom--image-card .sf-custom__block--image-right {\n  display: none;\n  position: absolute;\n}\n\n.sf-newsletter--home {\n  --color-border: #000;\n  --input-rounded: 8px;\n\n  background-image: url(\"https://cdn.shopify.com/s/files/1/0586/9777/7194/files/Secure_your_spot_in_MOCKERS_society_lounge..png?v=1705773661\");\n  background-position: center;\n  background-size: cover;\n  background-repeat: no-repeat;\n}\n.sf-newsletter--home .m-newsletter-section__header {\n  margin-bottom: 50px;\n}\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper {\n  background: #fff;\n  border-radius: 8px;\n  color: #000;\n  position: relative;\n  z-index: 0;\n}\n.sf-newsletter--home .m-newsletter-section__heading {\n  font-family: \"M-Body-Font\";\n  font-weight: 300;\n  font-size: 36px;\n  color: #000;\n}\n.sf-newsletter--home .m-newsletter-form__input,\n.sf-newsletter--home .m-newsletter-form__button {\n  z-index: 3;\n  background-color: #fff;\n  position: relative;\n  border-color: #000;\n}\n.sf-newsletter--home .m-newsletter-form__input {\n  color: #000;\n}\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper:before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  background-color: inherit;\n  border: 1px solid var(--color-border);\n  border-radius: inherit;\n  width: 100%;\n  height: 100%;\n  z-index: -1;\n  transform: translate(5px, 5px);\n  transition: all var(--m-duration-default, .25s);\n}\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper:hover:before,\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper:hover .m-newsletter-form__input,\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper:hover .m-newsletter-form__button {\n  border-color: var(--color-primary) !important;\n}\n.sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper:hover:before {\n  transform: translate(0);\n}\n\n.sf-custom--image-with-text .m-custom-content__block-inner {\n  --color-heading-text: #000;\n  --color-sub-text: #000;\n  --color-btn-bg: #fff;\n  color: #000;\n  border-radius: 8px;\n  padding: 35px;\n  background-color: #fff;\n}\n\n.sf-custom--image-with-text .m-richtext__title {\n  font-size: 28px !important;\n}\n\n.sf-featured-collection--01 {\n  padding-top: var(--spacing-sections-mobile);\n  padding-bottom: 0;\n}\n.sf-featured-collection--01 .m-product-card {\n  background-color: #fff;\n  border-radius: 8px;\n  height: 100%;\n}\n.sf-featured-collection--01 .m-product-card__background-expand {\n  display: none;\n}\n.sf-featured-collection--01 .m-product-card__link {\n  border-radius: 8px;\n  overflow: hidden;\n  position: relative;\n}\n.sf-featured-collection--01 .m-product-card__media {\n  padding: 20px 20px 0 20px;\n}\n.sf-featured-collection--01 .m-product-card__content {\n  padding: 0 20px 20px 20px !important;\n}\n\n.sf-custom--image-with-text {\n  padding-top: var(--spacing-sections-mobile);\n  padding-bottom: var(--spacing-sections-mobile);\n}\n@media (min-width: 768px) {\n  .sf-featured-collection--01 {\n    padding-top: var(--spacing-sections-tablet);\n  }\n\n  .sf-custom--image-with-text {\n    padding-top: var(--spacing-sections-tablet);\n    padding-bottom: var(--spacing-sections-tablet);\n  }\n  .sf-custom--countdown .m-countdown-timer__box {\n    min-width: 50px;\n  }\n  .sf-newsletter--home .m-section-py {\n    padding-top: 200px;\n    padding-bottom: 200px;\n  }\n}\n@media (min-width: 1024px) {\n  .sf-newsletter--home .m-newsletter-section__heading {\n    font-size: 56px;\n  }\n\n  .sf-featured-collection--01 {\n    padding-top: var(--spacing-sections-desktop);\n  }\n\n  .sf-custom--image-with-text {\n    padding-top: var(--spacing-sections-desktop);\n    padding-bottom: var(--spacing-sections-desktop);\n  } \n}\n@media (min-width: 1280px) {\n  .sf-button__big-size .m-button:not(.m-button--link) {\n    font-size: 22px;\n    line-height: 42px;\n    border-radius: 15px;\n    padding-left: 2rem;\n    padding-right: 2rem;\n  }\n  .sf-featured-collection--01 .m-product-card {\n    border-radius: 20px;\n  }\n  .sf-custom--image-card .m-image-card {\n    border-radius: 20px;\n  }\n  .sf-newsletter--home .m-newsletter-section__heading {\n    font-size: 100px;\n  }\n  .sf-custom--countdown .m-countdown-timer__digit {\n    font-size: 64px;\n  }\n  .sf-custom--countdown .m-countdown-timer__separator {\n    font-size: 32px;\n  }\n  .sf-newsletter--home .m-newsletter-form__input {\n    font-size: 26px;\n    height: 64px;\n  }\n  .sf-newsletter--home .m-newsletter-form__button svg {\n    width: 24px;\n    height: 24px;\n  }\n}\n@media (min-width: 1536px) {\n  .sf-button__big-size .m-button:not(.m-button--link) {\n    font-size: 34px;\n    line-height: 65px;\n    padding-left: 3rem;\n    padding-right: 3rem;\n  }\n  .sf-custom--countdown .m-countdown-timer__digit {\n    font-size: 100px;\n  }\n  .sf-custom--countdown .m-countdown-timer__separator {\n    font-size: 60px;\n  }\n  .sf-custom--countdown .m-countdown-timer__text {\n    font-weight: 600;\n    font-size: 18px;\n  }\n  .sf-custom--countdown .m-image {\n    margin-left: -126px;\n  }\n  .sf-custom--countdown .m-section-py {\n    padding-bottom: 80px;\n  }\n  .sf-custom--countdown .m-countdown__heading {\n    font-size: calc(((var(--font-h2-desktop))/ (var(--font-base-size))) * 1rem);\n  }\n\n  .sf-custom--image-card .sf-custom__block--image-left {\n    display: block;\n    padding: 0;\n    width: 210px;\n    top: 25%;\n    left: -100px;\n  }\n  .sf-custom--image-card .sf-custom__block--image-right {\n    display: block;\n    padding: 0;\n    width: 200px;\n    right: -64px;\n    bottom: -64px;\n  }\n\n  .sf-newsletter--home {\n    --input-rounded: 15px;\n  }\n  .sf-newsletter--home .m-newsletter-form--bordered .m-newsletter-form__wrapper  {\n    border-radius: 15px;\n  }\n  .sf-newsletter--home .m-section-py {\n    padding-top: 280px;\n    padding-bottom: 290px;\n  }\n  .sf-newsletter--home .m-newsletter-section__heading {\n    font-size: 160px;\n  }\n  .sf-newsletter--home .m-newsletter-form__input {\n    font-size: 34px;\n    height: 90px;\n  }\n  .sf-newsletter--home .m-newsletter-form__button svg {\n    width: 36px;\n    height: 36px;\n  }\n  .sf-custom--image-with-text .m-custom-content__block-inner {\n    border-radius: 30px;\n  }\n\n  .sf-custom--image-with-text {\n    padding-top: calc(var(--spacing-sections-desktop) + 4rem);\n    background-image: url(https://cdn.shopify.com/s/files/1/0595/7291/2305/files/Star.png?v=1665976250);\n    background-repeat: no-repeat;\n    background-size: auto;\n    background-position: calc(100% + 8rem) 0;\n    margin-top: -4rem;\n  }\n\n  .sf-featured-collection--01 {\n    background-image: url(https://cdn.shopify.com/s/files/1/0595/7291/2305/files/Star.png?v=1665976250);\n    background-repeat: no-repeat;\n    background-size: auto;\n    background-position: -9.3rem 5rem;\n  }\n}\n@media (max-width: 1279px) {\n  .sf-custom--countdown .m-custom-content__block {\n    width: 100%;\n  }\n}"
+      }
+    },
+    "mk_hero": {
+      "type": "mk-hero",
+      "blocks": {
+        "s1": {
+          "type": "stat",
+          "settings": {
+            "value": "64",
+            "label": "Designs"
+          }
+        },
+        "s2": {
+          "type": "stat",
+          "settings": {
+            "value": "1",
+            "label": "Design · every fit"
+          }
+        },
+        "s3": {
+          "type": "stat",
+          "settings": {
+            "value": "EGY",
+            "label": "Streetwear"
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3"
+      ],
+      "settings": {
+        "container": "container-fluid",
+        "heading": "Fits your<br>sense of <em>sarcasm</em>",
+        "heading_size": 84,
+        "button_1_text": "Shop designs",
+        "button_1_link": "/collections/all-designs",
+        "button_2_text": "Browse catalog",
+        "button_2_link": "/collections/all-designs",
+        "bg_color": "#000000",
+        "text_color": "#ffffff",
+        "accent_color": "#fbcd06",
+        "padding_top": 96,
+        "padding_bottom": 96,
+        "custom_class": ""
+      }
+    },
+    "mk_navmarquee": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "n0": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "All designs",
+            "text_size": 14,
+            "text_link": "/collections/all-designs"
+          }
+        },
+        "n1": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Tees",
+            "text_size": 14,
+            "text_link": "/collections/regular-fit-t-shirt"
+          }
+        },
+        "n2": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Hoodies",
+            "text_size": 14,
+            "text_link": "/collections/hoodie"
+          }
+        },
+        "n3": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Sweatshirts",
+            "text_size": 14,
+            "text_link": "/collections/sweatshirt"
+          }
+        },
+        "n4": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Oversized Light-Soft",
+            "text_size": 14,
+            "text_link": "/collections/oversized-light-soft"
+          }
+        },
+        "n5": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Oversized Heavy Premium",
+            "text_size": 14,
+            "text_link": "/collections/oversized-heavy-premium"
+          }
+        },
+        "n6": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Winter",
+            "text_size": 14,
+            "text_link": "/collections/winter-collection"
+          }
+        },
+        "n7": {
+          "type": "announcement",
+          "settings": {
+            "custom_svg": "",
+            "icon_size": "small",
+            "text": "Summer",
+            "text_size": 14,
+            "text_link": "/collections/summer-collection"
+          }
+        }
+      },
+      "block_order": [
+        "n0",
+        "n1",
+        "n2",
+        "n3",
+        "n4",
+        "n5",
+        "n6",
+        "n7"
+      ],
+      "settings": {
+        "container": "container-full",
+        "direction": "left",
+        "speed": 60,
+        "item_gap": 56,
+        "item_gap_mobile": 32,
+        "text_color": "#000000",
+        "bg_color": "#fbcd06",
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "custom_class": "mk-navmarquee"
       }
     },
     "slider_bcxzCf": {
@@ -20,7 +174,7 @@
         "slider_item_BxidLL": {
           "type": "slider_item",
           "settings": {
-            "background": "shopify://shop_images/MOCKERS_1_dbf9df5c-8a56-4451-b317-f1d1d4a7339b_1.avif",
+            "background": "shopify://shop_images/MOCKERS_1_dbf9df5c-8a56-4451-b317-f1d1d4a7339b.avif",
             "content_in_container": false,
             "content_position": "center middle",
             "text_alignment": "center",
@@ -95,6 +249,7 @@
         "slider_item_3V89eX",
         "slider_item_TKcY9V"
       ],
+      "disabled": true,
       "settings": {
         "container": "w-full",
         "slideshow_height": "adapt",
@@ -108,8 +263,7 @@
         "use_content_above": false,
         "custom_class": "",
         "animations": "inherit"
-      },
-      "disabled": true
+      }
     },
     "38fa9b22-092c-4b2d-a30e-d988607226d8": {
       "type": "featured-collection",
@@ -165,8 +319,7 @@
           "type": "collection_block",
           "settings": {
             "collection": "oversized-light-soft",
-            "title": "Oversized Light-Soft",
-            "item_image": "shopify://shop_images/355_d8d282a6-779d-4a0c-a70f-c239b2925884.png"
+            "title": "Oversized Light-Soft"
           }
         },
         "garment_2": {
@@ -242,7 +395,7 @@
           "settings": {
             "image": "shopify://shop_images/64.png",
             "image_height": 120,
-            "image_link": "shopify://products/need-weed"
+            "image_link": "shopify://products/need-weed-regular-fit-t-shirt"
           }
         },
         "template--15878897008817__abe1f9e0-563f-4849-9045-0006dffe27ee-1686303653545ab2aa-1": {
@@ -250,7 +403,7 @@
           "settings": {
             "image": "shopify://shop_images/6.png",
             "image_height": 120,
-            "image_link": "shopify://products/national-psychotic"
+            "image_link": "shopify://products/national-psychotic-regular-fit-t-shirt"
           }
         },
         "template--15878897008817__abe1f9e0-563f-4849-9045-0006dffe27ee-1686303653545ab2aa-2": {
@@ -258,7 +411,7 @@
           "settings": {
             "image": "shopify://shop_images/43.jpg",
             "image_height": 120,
-            "image_link": "shopify://products/devil-inside"
+            "image_link": "shopify://products/devil-inside-regular-fit-t-shirt"
           }
         },
         "template--15878897008817__abe1f9e0-563f-4849-9045-0006dffe27ee-1686303653545ab2aa-3": {
@@ -266,7 +419,7 @@
           "settings": {
             "image": "shopify://shop_images/36.png",
             "image_height": 120,
-            "image_link": "shopify://products/adhd"
+            "image_link": "shopify://products/adhd-regular-fit-t-shirt"
           }
         },
         "57e85c2c-ffb2-43f5-85c4-175e0b3f50a2": {
@@ -274,7 +427,7 @@
           "settings": {
             "image": "shopify://shop_images/53.png",
             "image_height": 120,
-            "image_link": "shopify://products/disappointed-but-not-surprised"
+            "image_link": "shopify://products/disappointed-but-not-surprised-regular-fit-t-shirt"
           }
         },
         "image_CaRtK8": {
@@ -282,7 +435,7 @@
           "settings": {
             "image": "shopify://shop_images/65.jpg",
             "image_height": 120,
-            "image_link": "shopify://products/fedup"
+            "image_link": "shopify://products/fedup-regular-fit-t-shirt"
           }
         },
         "image_jh7CJh": {
@@ -290,7 +443,7 @@
           "settings": {
             "image": "shopify://shop_images/30.jpg",
             "image_height": 120,
-            "image_link": "shopify://products/paranoid"
+            "image_link": "shopify://products/paranoid-regular-fit-t-shirt"
           }
         },
         "image_cPncEQ": {
@@ -298,7 +451,7 @@
           "settings": {
             "image": "shopify://shop_images/14.png",
             "image_height": 120,
-            "image_link": "shopify://products/mood-swings"
+            "image_link": "shopify://products/mood-swings-regular-fit-t-shirt"
           }
         },
         "image_z9zdMc": {
@@ -306,7 +459,7 @@
           "settings": {
             "image": "shopify://shop_images/27.jpg",
             "image_height": 120,
-            "image_link": "shopify://products/diet-joke"
+            "image_link": "shopify://products/diet-joke-regular-fit-t-shirt"
           }
         },
         "image_rLAXiK": {
@@ -314,7 +467,7 @@
           "settings": {
             "image": "shopify://shop_images/57.png",
             "image_height": 120,
-            "image_link": "shopify://products/the-rolling-eyes"
+            "image_link": "shopify://products/the-rolling-eyes-regular-fit-t-shirt"
           }
         },
         "image_FH3nnm": {
@@ -322,7 +475,7 @@
           "settings": {
             "image": "shopify://shop_images/46.png",
             "image_height": 120,
-            "image_link": "shopify://products/trust-the-process"
+            "image_link": "shopify://products/trust-the-process-regular-fit-t-shirt"
           }
         }
       },
@@ -675,6 +828,7 @@
       "blocks": {
         "ai_gen_block_ea06cf7_jBEpRD": {
           "type": "ai_gen_block_ea06cf7",
+          "disabled": true,
           "settings": {
             "notice_text": "<p><strong>All sale items are final</strong> — no returns or exchanges, because amazing deals don't come with a rewind button.</p>",
             "show_icon": true,
@@ -705,6 +859,7 @@
       "block_order": [
         "ai_gen_block_ea06cf7_jBEpRD"
       ],
+      "disabled": true,
       "settings": {}
     },
     "96b1b468-c675-416a-a8af-7c059ca82920": {
@@ -776,6 +931,7 @@
     },
     "80ee1faf-0aab-4c02-9bc4-57bef04c606a": {
       "type": "newsletter",
+      "disabled": true,
       "settings": {
         "container": "w-full",
         "background_color": "#fbcd06",
@@ -796,157 +952,35 @@
         "animations": "inherit"
       }
     },
-    "mk_hero": {
-      "type": "mk-hero",
+    "mk_story_reviews": {
+      "type": "mk-story-reviews",
+      "disabled": true,
       "blocks": {
-        "s1": {
-          "type": "stat",
-          "settings": {
-            "value": "64",
-            "label": "Designs"
-          }
+        "story_1": {
+          "type": "story",
+          "settings": {}
         },
-        "s2": {
-          "type": "stat",
-          "settings": {
-            "value": "1",
-            "label": "Design · every fit"
-          }
+        "story_2": {
+          "type": "story",
+          "settings": {}
         },
-        "s3": {
-          "type": "stat",
-          "settings": {
-            "value": "EGY",
-            "label": "Streetwear"
-          }
+        "story_3": {
+          "type": "story",
+          "settings": {}
+        },
+        "story_4": {
+          "type": "story",
+          "settings": {}
         }
       },
       "block_order": [
-        "s1",
-        "s2",
-        "s3"
+        "story_1",
+        "story_2",
+        "story_3",
+        "story_4"
       ],
       "settings": {
-        "container": "container-fluid",
-        "heading": "Fits your<br>sense of <em>sarcasm</em>",
-        "heading_size": 84,
-        "button_1_text": "Shop designs",
-        "button_1_link": "/collections/all-designs",
-        "button_2_text": "Browse catalog",
-        "button_2_link": "/collections/all-designs",
-        "bg_color": "#000000",
-        "text_color": "#ffffff",
-        "accent_color": "#fbcd06",
-        "padding_top": 96,
-        "padding_bottom": 96,
-        "custom_class": ""
-      }
-    },
-    "mk_navmarquee": {
-      "type": "scrolling-promotion",
-      "blocks": {
-        "n0": {
-          "type": "announcement",
-          "settings": {
-            "text": "All designs",
-            "text_size": 14,
-            "text_link": "/collections/all-designs",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n1": {
-          "type": "announcement",
-          "settings": {
-            "text": "Tees",
-            "text_size": 14,
-            "text_link": "/collections/regular-fit-t-shirt",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n2": {
-          "type": "announcement",
-          "settings": {
-            "text": "Hoodies",
-            "text_size": 14,
-            "text_link": "/collections/hoodie",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n3": {
-          "type": "announcement",
-          "settings": {
-            "text": "Sweatshirts",
-            "text_size": 14,
-            "text_link": "/collections/sweatshirt",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n4": {
-          "type": "announcement",
-          "settings": {
-            "text": "Oversized Light-Soft",
-            "text_size": 14,
-            "text_link": "/collections/oversized-light-soft",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n5": {
-          "type": "announcement",
-          "settings": {
-            "text": "Oversized Heavy Premium",
-            "text_size": 14,
-            "text_link": "/collections/oversized-heavy-premium",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n6": {
-          "type": "announcement",
-          "settings": {
-            "text": "Winter",
-            "text_size": 14,
-            "text_link": "/collections/winter-collection",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        },
-        "n7": {
-          "type": "announcement",
-          "settings": {
-            "text": "Summer",
-            "text_size": 14,
-            "text_link": "/collections/summer-collection",
-            "custom_svg": "",
-            "icon_size": "small"
-          }
-        }
-      },
-      "block_order": [
-        "n0",
-        "n1",
-        "n2",
-        "n3",
-        "n4",
-        "n5",
-        "n6",
-        "n7"
-      ],
-      "settings": {
-        "container": "container-full",
-        "direction": "left",
-        "speed": 60,
-        "item_gap": 56,
-        "item_gap_mobile": 32,
-        "text_color": "#000000",
-        "bg_color": "#fbcd06",
-        "padding_top": 12,
-        "padding_bottom": 12,
-        "custom_class": "mk-navmarquee"
+        "button_link": "https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTMzMzIwOTEzNzU4Nzc0"
       }
     }
   },
@@ -960,6 +994,7 @@
     "abe1f9e0-563f-4849-9045-0006dffe27ee",
     "featured_collection_9LN6MK",
     "featured_collection_summer",
+    "mk_story_reviews",
     "6c61f80c-a60d-4c6c-a8e3-c8298b8e2b77",
     "2405505c-e1ee-446b-9080-79900a24029a",
     "072f21c1-5374-4657-8025-c012a7d34618",
