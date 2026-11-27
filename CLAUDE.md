@@ -49,6 +49,7 @@ Egyptian sarcastic-slogan apparel brand. Shopify store + catalogue scripts + gro
 - Best ad ever: video "Ad 3 vd - Copy" (campaign "Old Vid | Camp | 3/18/26 - S", creative 1678137513518396, "Summer Sale" video): 22.2k -> 116 purchases, 171k, CPA 192, CTR 4.15%. Other winners are videos too (Oversized "Perfect Everyday Tees" CTR 4.3%, New Reel 4/29 CPA 319, Caps CPA 228, Hoodies catalogue CPA 260).
 - Pixel "Mockers Pixel" 262349110220793: server events on, Purchase EMQ 8/10; upper-funnel EMQ ~5, fbc coverage 5-8%.
 - Competitors (Ad Library, 26 Nov): In Your Shoe and KAI Collections running many Black Friday sale ads; The Inkjection 1 ad.
+- **Unit cost (owner, 27 Nov):** ~450 item + 30 print + 35 packaging = ~515 EGP per item, about the same for all products. Gross margin per item: Hoodie ~1,084, Sweatshirt ~984, Oversized Heavy ~415, Light-Soft ~263, Regular tee ~164. Avg order ~1.6 items -> ~840 EGP margin before delivery/COD costs -> break-even ~840 EGP per order from ads, break-even return ~2x. Ads should push hoodies/sweatshirts; tees only as add-ons (no tee-only discounts).
 
 ## Key docs
 `GROWTH_PLAN.md`, `MOCKERS_CATALOGUE_PLAYBOOK.md`, `MIGRATION_PLAN_LIVE.md`, `catalog-build/`, `reports/live_products.csv`.
