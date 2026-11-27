@@ -50,6 +50,8 @@ Egyptian sarcastic-slogan apparel brand. Shopify store + catalogue scripts + gro
 - Pixel "Mockers Pixel" 262349110220793: server events on, Purchase EMQ 8/10; upper-funnel EMQ ~5, fbc coverage 5-8%.
 - Competitors (Ad Library, 26 Nov): In Your Shoe and KAI Collections running many Black Friday sale ads; The Inkjection 1 ad.
 - **Unit cost (owner, 27 Nov):** ~450 item + 30 print + 35 packaging = ~515 EGP per item, about the same for all products. Gross margin per item: Hoodie ~1,084, Sweatshirt ~984, Oversized Heavy ~415, Light-Soft ~263, Regular tee ~164. Avg order ~1.6 items -> ~840 EGP margin before delivery/COD costs -> break-even ~840 EGP per order from ads, break-even return ~2x. Ads should push hoodies/sweatshirts; tees only as add-ons (no tee-only discounts).
+- **Owner answers (27 Nov):** COD refusals ~5-10%; delivery EGP 80, max 4-5 days; no in-house content production right now (Claude to make creatives from the product-picture library and references); IG @mockers.eg ~6,500 followers, 5-8 posts/week, but organic engagement is tiny (most posts 0-9 likes); 500+ past customers in courier sheets (Google Sheets "2H X Mockers" ~600 rows, "JEX ORDERS" ~290 rows; never copy into the repo); no spend without a risk-capped plan; target still 500k, this is a 10k test.
+- The 30.6s reel (video 27146229395058380 = 1488473686622032 = 2864483163914925, same file) powered the 3 best ads (~177 purchases). 6.6s reel 1700754514548888 ("SPECIAL DISCOUNTS", New Reel 4/29) did 52 purchases at CPA 319.
 
 ## Key docs
 `GROWTH_PLAN.md`, `MOCKERS_CATALOGUE_PLAYBOOK.md`, `MIGRATION_PLAN_LIVE.md`, `catalog-build/`, `reports/live_products.csv`.
