@@ -7,16 +7,18 @@ Goal: the most profitable orders per pound spent, then scale only what is proven
 
 ## 1. The maths first (why this plan looks the way it does)
 
-**Unit cost ~515 EGP per item. Free shipping costs us ~80 EGP per order. COD refusals 5-10%.**
+**Unit cost: hoodie/sweatshirt ~515 EGP, any tee 400 EGP (incl. print + packaging). Free shipping costs us ~80 EGP per order (Cairo/Giza; up to 205 for far zones). COD refusals 5-10%.**
 
 | Basket | Price | Margin after item cost + free shipping | Max we can pay Meta and still profit |
 |---|---|---|---|
-| 1 Regular tee | 679 | 84 | **0: never advertise tees alone** |
-| 1 Oversized heavy tee | 930 | 335 | ~150 |
+| 1 Regular tee | 679 | 199 | ~0: never advertise tees alone |
+| 1 Oversized heavy tee | 930 | 450 | ~250 |
 | 1 Sweatshirt | 1,499 | 904 | ~600 |
 | 1 Hoodie | 1,599 | 1,004 | ~650 |
-| 2 Sweatshirts + free tee | 2,998 | 1,373 | ~900 |
-| 2 Hoodies + free tee | 3,198 | 1,573 | ~1,000 |
+| 2 Sweatshirts + free tee | 2,998 | 1,488 | ~1,000 |
+| 2 Hoodies + free tee | 3,198 | 1,688 | ~1,100 |
+
+With the 200 EGP post discount (no minimum, owner decision): a tee-only order breaks even (199 - 200), every hoodie/sweatshirt order stays clearly profitable.
 
 - **Target CPA: 350 EGP. Kill line: 600 EGP.** Our best-ever ads ran 192-410 CPA, so 350 is realistic, not hopeful.
 - **Ads sell hoodies and sweatshirts only.** Tees appear only as the free gift or an add-on.
@@ -25,8 +27,7 @@ Goal: the most profitable orders per pound spent, then scale only what is proven
 ### Offer tweaks (small changes, big effect)
 1. **Free shipping, no minimum:** keep it. For COD buyers it removes the last objection. It's the headline of every ad.
 2. **Free tee above 3,000:** set the threshold to **2,990 EGP**. 2 sweatshirts = 2,998, so then *any two winter pieces* qualify. "Buy any 2 hoodies/sweatshirts, get a tee free" is a much easier sentence to sell than a number. The gift tee costs us 515 but lifts the order margin from ~950 to ~1,400.
-3. **200 EGP for an Instagram post:** keep it, with two guard rails:
-   - Only on orders of **1,400+** (any hoodie or sweatshirt), or a tee order turns into a loss.
+3. **200 EGP for an Instagram post (no minimum, owner decision):**
    - The post must be **public, tag @mockers.eg, and stay up 30 days**. The DM must arrive **before the order ships** (we reduce the COD amount). Otherwise it becomes a code for the next order (which also brings repeat orders).
    - This offer is our **free content engine.** Every post is ad creative (reshare with permission), and we have no content production.
 
@@ -49,17 +50,15 @@ Goal: the most profitable orders per pound spent, then scale only what is proven
 
 ## 3. Free sales first (0 EGP spend)
 
-- **WhatsApp broadcast to 500+ past customers** (day 1 and day 10): new winter designs + free shipping + free tee on 2 pieces + "post a pic, get 200 off". Expected: 3-5% order, i.e. 15-25 orders at ~zero cost. This alone can beat the whole ad test.
+WhatsApp is parked for now (owner, 28 Nov).
 - **Instagram stories daily:** 1 design close-up, 1 customer repost, 1 offer reminder.
 - **Reshare every customer post** that comes in for the 200 EGP offer (social proof, plus content for ads).
-
----
 
 ## 4. Campaign structure (Meta, 3 campaigns only)
 
 Small budgets die when split thin. So: few ad sets, broad targeting, let the pixel (Purchase EMQ 8/10) do the work.
 
-**Location: Cairo + Giza** (76% of orders; New Cairo, Fifth Settlement, Sheikh Zayed, Maadi, Zamalek). **Age 22-45.** No international.
+**Location: all of Egypt** (shipping is free nationwide; Meta finds the buyers, 76% are Cairo). **Age 22-45 as a suggestion.** No international.
 
 ### A. SCALE: "Winners" (Advantage+ Sales / ASC), 55% of budget
 - Objective Sales → Purchase. One campaign, broad audience. Existing customers capped at 20%.
@@ -114,24 +113,38 @@ If Phase 1 misses its gate: **stop, don't spend more.** Fix the site/offer/creat
 
 ---
 
-## 7. What to expect (honest)
+## 7. What to expect (honest, recalculated 28 Nov without WhatsApp)
 
-| Scenario | CPA | Orders from 10k | Avg order (bundle push) | Ad sales | + WhatsApp/organic | Total |
-|---|---|---|---|---|---|---|
-| Weak | 500 | 20 | 1,800 | 36k | 25k | ~60k |
-| Expected | 350 | 28 | 2,000 | 57k | 35k | ~90k |
-| Strong (Mar-May 2026 level) | 220 | 45 | 2,100 | 95k | 40k | ~135k |
+Contribution = margin after item cost, free shipping, free tee share, ~20% of orders using the 200 EGP post discount and 7.5% COD refusals, minus the 10k ad spend.
 
+| Scenario | CPA | Orders from 10k | Avg order | Ad sales | + organic (~3 wks) | Total sales | Contribution after ads |
+|---|---|---|---|---|---|---|---|
+| Weak | 500 | 20 | 1,800 | 36k | 8k | ~44k | ~+9k |
+| Expected | 350 | 28 | 2,000 | 57k | 8k | ~65k | ~+20k |
+| Strong (Mar-May 2026 level) | 220 | 45 | 2,100 | 95k | 10k | ~105k | ~+40k |
+
+- Even the weak case pays for itself, because the offer pushes 2-piece orders.
 - **500k is not reachable on 10k EGP.** Even at our best-ever 8x it needs ~60-70k of spend.
-- The test's job is to **prove a CPA ≤ 350 machine in 3 weeks.** Then scale budget week by week (+20-30%) towards 500k over Dec-Jan, as long as blended MER stays ≥ 3.
+- The test's job is to **prove a CPA ≤ 350 machine in 3 weeks.** Then scale budget week by week (+20-30%) as long as blended MER stays ≥ 3.
 
----
+## 7b. What is built (28 Nov 2026)
+
+**Store (live):** automatic discount "FREE SHIPPING (Egypt)" (no minimum); automatic "FREE TEE with 2 hoodies/sweatshirts (2,990+)" (any tee type, customer adds the tee, it drops to 0; tested in cart); announcement bar on every page. Script: `setup_offers.py`. Theme backup: `live-backup/theme-20261128/header-group.json`.
+
+**Meta (drafts, not published, 400 EGP/day total):**
+| Campaign | ID | Budget | Ad set | Ads |
+|---|---|---|---|---|
+| DEC26 / A Scale / Sales / Winter | 120249657970910701 | 190/day (CBO) | Egypt, 21+, age 22-45 as suggestion, Purchase | A1 new reel "Design is the joke" (14s); A2 best-ever video with winter copy |
+| DEC26 / B Creative Test / Sales | 120249657971010701 | 150/day (ad set) | same | B1 carousel of 8 best sellers; B2 bundle static (4:5 + 9:16) |
+| DEC26 / C Retarget / Sales | 120249657971040701 | 60/day (CBO) | Site visitors / ATC / buyers 120d only | C1 bundle; C2 carousel |
+
+Old campaigns paused: "Mac Comedian" and the "Everyone else is boring" boost. Creative files: built by `build_ad_creatives.py` from the website mockups.
 
 ## 8. Division of work
 
 | Claude | Owner |
 |---|---|
 | Build reels/carousels from mockups + artwork (no AI, no Canva credits) | Raise Meta spend limit, approve campaigns before they go live |
-| Shopify: free shipping, free-tee discount, announcement bar, cart progress, WhatsApp, reviews section (each with approval) | WhatsApp broadcast to past customers; upload customer list to Meta |
+| Shopify: free shipping, free-tee discount, announcement bar (done 28 Nov); reviews section when stories are uploaded | Upload customer list to Meta (optional) |
 | Set up campaigns as **paused drafts** in Meta for review | Handle UGC DMs (200 EGP) and reshare posts |
 | Daily numbers + kill/scale calls | Post daily stories |
