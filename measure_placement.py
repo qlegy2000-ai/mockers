@@ -74,3 +74,10 @@ def debug(img, L, out):
     d.line([(L["cx"], 0), (L["cx"], im.height)], fill="yellow", width=w)
     if L["print"]: d.rectangle(L["print"], outline="lime", width=w)
     im.thumbnail((500, 500)); im.save(out)
+
+def plausible(r):
+    """Lessons from owner feedback (28 Nov 2026). Reject a measured reference when the
+    detector probably locked onto something else (hand, phone, background, pocket):
+    print off-centre, glued to the neckline, too low, or too big for a small/medium chest print."""
+    return (r and abs(r["dx"]) <= 0.06 and 0.12 <= r["top"] <= 0.27
+            and r["w"] <= 0.45 and r["w"] ** 2 * r["aspect"] <= 0.075)

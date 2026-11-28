@@ -21,6 +21,10 @@ RULES = {  # product handle -> colours to take off sale
        for s in ("hoodie", "sweatshirt")},
     **{f"{d}-{s}": LIGHT for d in ["capitalism", "my-therapist"] for s in ("hoodie", "sweatshirt")},
 }
+# Owner asked (28 Nov) to remove these even though they have a photo: applied regardless of `shot`.
+FORCE = {"veganism-hoodie": ["Purple"], "veganism-sweatshirt": ["Dark Blue"]}
+for h, cols in FORCE.items():
+    RULES[h] = sorted(set(RULES.get(h, [])) | set(cols))
 Q = """query($h:String!){ productByHandle(handle:$h){ id title variants(first:100){ nodes{ id title
   selectedOptions{name value} inventoryPolicy image{id}
   inventoryItem{ id tracked inventoryLevels(first:5){ nodes{ location{ id } quantities(names:["available"]){ quantity } } } } } } } }"""
@@ -36,6 +40,7 @@ for h, cols in RULES.items():
             todo.append((p, v))
     # keep colours the owner already photographed (deliberate versions): skip every size of that colour
     shot = {{o["name"]: o["value"] for o in v["selectedOptions"]}["Color"] for v in p["variants"]["nodes"] if v["image"]}
+    shot -= set(FORCE.get(h, []))
     todo = [(pp, vv) for pp, vv in todo if not (pp is p and {o["name"]: o["value"] for o in vv["selectedOptions"]}["Color"] in shot)]
 from collections import Counter
 print(Counter(f'{p["title"]} / ' + {o["name"]: o["value"] for o in v["selectedOptions"]}["Color"] for p, v in todo))
