@@ -58,4 +58,4 @@ Egyptian sarcastic-slogan apparel brand. Shopify store + catalogue scripts + gro
 - **Mockup lessons (owner feedback 28 Nov):** (1) Never trust a single measured reference: lifestyle photos (hands, phones, pockets) fooled the detector (Andy hoodie came out huge, Breaking Sad hoodie low). Use `measure_placement.plausible()`; else fall back to the same design's other garment or a clean studio ref. (2) Prints start ~0.19-0.21 x chest width below the neckline on both garments; 0.27+ reads as too low (Palestine, Breaking Sad). (3) Some of the owner's OLD mockups are too big (Trans-parent needed -35%, Pros & Cons -30%): cap print area (w² x aspect) at ~0.075 and width at 0.45 of chest. (4) Check every image visually next to the owner's ref before sending. Veganism Purple hoodie + Dark Blue sweatshirt taken off sale (28 Nov).
 
 ## Key docs
-`GROWTH_PLAN.md`, `MOCKERS_CATALOGUE_PLAYBOOK.md`, `MIGRATION_PLAN_LIVE.md`, `catalog-build/`, `reports/live_products.csv`.
+`GROWTH_PLAN.md`, `MEDIA_BUYING_PLAN.md` (Dec 2026 10k test), `MOCKERS_CATALOGUE_PLAYBOOK.md`, `MIGRATION_PLAN_LIVE.md`, `catalog-build/`, `reports/live_products.csv`.
