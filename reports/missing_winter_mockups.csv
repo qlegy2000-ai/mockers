@@ -1,11 +1,11 @@
 design,handle,style,colour,status
 ADHD,adhd-hoodie,Hoodie,Black,MISSING
-ADHD,adhd-hoodie,Hoodie,Offwhite,MISSING
+ADHD,adhd-hoodie,Hoodie,Offwhite,OK
 ADHD,adhd-hoodie,Hoodie,Purple,MISSING
 ADHD,adhd-hoodie,Hoodie,Aegean Blue,MISSING
 ADHD,adhd-hoodie,Hoodie,Iron Grey,MISSING
 ANDY,andy-hoodie,Hoodie,Black,OK
-ANDY,andy-hoodie,Hoodie,Purple,MISSING
+ANDY,andy-hoodie,Hoodie,Purple,OK
 ANDY,andy-hoodie,Hoodie,Aegean Blue,OK
 ANDY,andy-hoodie,Hoodie,Iron Grey,OK
 ANDY,andy-hoodie,Hoodie,Offwhite,NO VARIANT
@@ -26,7 +26,7 @@ ANXIETY,anxiety-hoodie,Hoodie,Aegean Blue,PARTIAL
 ANXIETY,anxiety-hoodie,Hoodie,Iron Grey,PARTIAL
 BREAKING SAD,breaking-sad-hoodie,Hoodie,Black,OK
 BREAKING SAD,breaking-sad-hoodie,Hoodie,Offwhite,OK
-BREAKING SAD,breaking-sad-hoodie,Hoodie,Purple,MISSING
+BREAKING SAD,breaking-sad-hoodie,Hoodie,Purple,OK
 BREAKING SAD,breaking-sad-hoodie,Hoodie,Aegean Blue,OK
 BREAKING SAD,breaking-sad-hoodie,Hoodie,Iron Grey,OK
 C.O.D,c-o-d-hoodie,Hoodie,Black,OK
@@ -75,7 +75,7 @@ DIVER'S EVOLUTION,divers-evolution-hoodie,Hoodie,Purple,PARTIAL
 DIVER'S EVOLUTION,divers-evolution-hoodie,Hoodie,Aegean Blue,OK
 DIVER'S EVOLUTION,divers-evolution-hoodie,Hoodie,Iron Grey,OK
 DRUNKIN,drunkin-hoodie,Hoodie,Black,OK
-DRUNKIN,drunkin-hoodie,Hoodie,Offwhite,MISSING
+DRUNKIN,drunkin-hoodie,Hoodie,Offwhite,OK
 DRUNKIN,drunkin-hoodie,Hoodie,Purple,OK
 DRUNKIN,drunkin-hoodie,Hoodie,Aegean Blue,OK
 DRUNKIN,drunkin-hoodie,Hoodie,Iron Grey,OK
@@ -129,16 +129,16 @@ HUMANS,humans-hoodie,Hoodie,Offwhite,PARTIAL
 HUMANS,humans-hoodie,Hoodie,Purple,PARTIAL
 HUMANS,humans-hoodie,Hoodie,Aegean Blue,OK
 HUMANS,humans-hoodie,Hoodie,Iron Grey,OK
-AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Black,MISSING
+AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Black,OK
 AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Offwhite,MISSING
-AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Purple,MISSING
-AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Aegean Blue,MISSING
-AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Iron Grey,MISSING
-I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Black,MISSING
+AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Purple,OK
+AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Aegean Blue,OK
+AGGRESSIVE DUCK,i-choose-violance-hoodie,Hoodie,Iron Grey,OK
+I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Black,OK
 I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Offwhite,PARTIAL
 I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Purple,PARTIAL
-I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Aegean Blue,MISSING
-I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Iron Grey,MISSING
+I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Aegean Blue,OK
+I LOVE YOUR PERSONALITY,i-love-your-personality-hoodie,Hoodie,Iron Grey,OK
 IF ONLY,if-only-hoodie,Hoodie,Black,OK
 IF ONLY,if-only-hoodie,Hoodie,Purple,PARTIAL
 IF ONLY,if-only-hoodie,Hoodie,Aegean Blue,OK
@@ -151,11 +151,11 @@ ILLEGAL,illegal-hoodie,Hoodie,Iron Grey,OK
 ILLEGAL,illegal-hoodie,Hoodie,Offwhite,NO VARIANT
 JUDGEMENTAL,im-not-judgemantal-hoodie,Hoodie,Black,OK
 JUDGEMENTAL,im-not-judgemantal-hoodie,Hoodie,Offwhite,OK
-JUDGEMENTAL,im-not-judgemantal-hoodie,Hoodie,Purple,MISSING
+JUDGEMENTAL,im-not-judgemantal-hoodie,Hoodie,Purple,OK
 JUDGEMENTAL,im-not-judgemantal-hoodie,Hoodie,Aegean Blue,OK
 JUDGEMENTAL,im-not-judgemantal-hoodie,Hoodie,Iron Grey,OK
 INTO-RESTING,into-resting-hoodie,Hoodie,Black,OK
-INTO-RESTING,into-resting-hoodie,Hoodie,Offwhite,MISSING
+INTO-RESTING,into-resting-hoodie,Hoodie,Offwhite,OK
 INTO-RESTING,into-resting-hoodie,Hoodie,Purple,MISSING
 INTO-RESTING,into-resting-hoodie,Hoodie,Aegean Blue,OK
 INTO-RESTING,into-resting-hoodie,Hoodie,Iron Grey,OK
@@ -169,8 +169,8 @@ JOMO,jomo-hoodie,Hoodie,Offwhite,MISSING
 JOMO,jomo-hoodie,Hoodie,Purple,MISSING
 JOMO,jomo-hoodie,Hoodie,Aegean Blue,MISSING
 JOMO,jomo-hoodie,Hoodie,Iron Grey,MISSING
-KILL BIC,kill-bic-hoodie,Hoodie,Black,MISSING
-KILL BIC,kill-bic-hoodie,Hoodie,Purple,MISSING
+KILL BIC,kill-bic-hoodie,Hoodie,Black,OK
+KILL BIC,kill-bic-hoodie,Hoodie,Purple,OK
 KILL BIC,kill-bic-hoodie,Hoodie,Aegean Blue,OK
 KILL BIC,kill-bic-hoodie,Hoodie,Iron Grey,OK
 KILL BIC,kill-bic-hoodie,Hoodie,Offwhite,NO VARIANT
@@ -239,7 +239,7 @@ PARANOID,paranoid-hoodie,Hoodie,Purple,PARTIAL
 PARANOID,paranoid-hoodie,Hoodie,Aegean Blue,PARTIAL
 PARANOID,paranoid-hoodie,Hoodie,Iron Grey,PARTIAL
 PARANOID,paranoid-hoodie,Hoodie,Offwhite,NO VARIANT
-PROS & CONS,pros-cons-hoodie,Hoodie,Black,MISSING
+PROS & CONS,pros-cons-hoodie,Hoodie,Black,OK
 PROS & CONS,pros-cons-hoodie,Hoodie,Purple,PARTIAL
 PROS & CONS,pros-cons-hoodie,Hoodie,Aegean Blue,PARTIAL
 PROS & CONS,pros-cons-hoodie,Hoodie,Iron Grey,PARTIAL
@@ -275,8 +275,8 @@ SUCKERS,suckers-hoodie,Hoodie,Purple,PARTIAL
 SUCKERS,suckers-hoodie,Hoodie,Aegean Blue,PARTIAL
 SUCKERS,suckers-hoodie,Hoodie,Iron Grey,PARTIAL
 NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Black,OK
-NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Offwhite,MISSING
-NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Purple,MISSING
+NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Offwhite,OK
+NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Purple,OK
 NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Aegean Blue,OK
 NICEST ASSHOLE,the-nicest-asshole-hoodie,Hoodie,Iron Grey,OK
 The ROLLING EYES,the-rolling-eyes-hoodie,Hoodie,Black,PARTIAL
@@ -285,17 +285,17 @@ The ROLLING EYES,the-rolling-eyes-hoodie,Hoodie,Purple,PARTIAL
 The ROLLING EYES,the-rolling-eyes-hoodie,Hoodie,Aegean Blue,PARTIAL
 The ROLLING EYES,the-rolling-eyes-hoodie,Hoodie,Iron Grey,PARTIAL
 TRANS-PARENT,trans-parent-hoodie,Hoodie,Black,PARTIAL
-TRANS-PARENT,trans-parent-hoodie,Hoodie,Purple,MISSING
-TRANS-PARENT,trans-parent-hoodie,Hoodie,Aegean Blue,MISSING
+TRANS-PARENT,trans-parent-hoodie,Hoodie,Purple,OK
+TRANS-PARENT,trans-parent-hoodie,Hoodie,Aegean Blue,OK
 TRANS-PARENT,trans-parent-hoodie,Hoodie,Iron Grey,PARTIAL
 TRANS-PARENT,trans-parent-hoodie,Hoodie,Offwhite,NO VARIANT
-TRUST THE PROCESS,trust-the-process-hoodie,Hoodie,Black,MISSING
+TRUST THE PROCESS,trust-the-process-hoodie,Hoodie,Black,OK
 TRUST THE PROCESS,trust-the-process-hoodie,Hoodie,Offwhite,PARTIAL
 TRUST THE PROCESS,trust-the-process-hoodie,Hoodie,Purple,PARTIAL
 TRUST THE PROCESS,trust-the-process-hoodie,Hoodie,Aegean Blue,PARTIAL
 TRUST THE PROCESS,trust-the-process-hoodie,Hoodie,Iron Grey,OK
 VEGANISM,veganism-hoodie,Hoodie,Black,MISSING
-VEGANISM,veganism-hoodie,Hoodie,Offwhite,MISSING
+VEGANISM,veganism-hoodie,Hoodie,Offwhite,OK
 VEGANISM,veganism-hoodie,Hoodie,Purple,PARTIAL
 VEGANISM,veganism-hoodie,Hoodie,Aegean Blue,MISSING
 VEGANISM,veganism-hoodie,Hoodie,Iron Grey,PARTIAL
@@ -304,10 +304,10 @@ WISH YOU WERE BEER,wish-you-were-beer-hoodie,Hoodie,Offwhite,PARTIAL
 WISH YOU WERE BEER,wish-you-were-beer-hoodie,Hoodie,Purple,PARTIAL
 WISH YOU WERE BEER,wish-you-were-beer-hoodie,Hoodie,Aegean Blue,OK
 WISH YOU WERE BEER,wish-you-were-beer-hoodie,Hoodie,Iron Grey,PARTIAL
-WORD FILTER,word-filter-hoodie,Hoodie,Black,MISSING
+WORD FILTER,word-filter-hoodie,Hoodie,Black,OK
 WORD FILTER,word-filter-hoodie,Hoodie,Offwhite,PARTIAL
 WORD FILTER,word-filter-hoodie,Hoodie,Purple,PARTIAL
-WORD FILTER,word-filter-hoodie,Hoodie,Aegean Blue,MISSING
+WORD FILTER,word-filter-hoodie,Hoodie,Aegean Blue,OK
 WORD FILTER,word-filter-hoodie,Hoodie,Iron Grey,PARTIAL
 MIDDLE FINGERS,middle-fingers-hoodie,Hoodie,Black,OK
 MIDDLE FINGERS,middle-fingers-hoodie,Hoodie,Offwhite,OK
@@ -324,15 +324,15 @@ OLD PEOPLE,old-people-hoodie,Hoodie,Offwhite,MISSING
 OLD PEOPLE,old-people-hoodie,Hoodie,Purple,MISSING
 OLD PEOPLE,old-people-hoodie,Hoodie,Aegean Blue,MISSING
 OLD PEOPLE,old-people-hoodie,Hoodie,Iron Grey,MISSING
-PALESTINE,palestine-hoodie,Hoodie,Black,MISSING
-PALESTINE,palestine-hoodie,Hoodie,Purple,MISSING
-PALESTINE,palestine-hoodie,Hoodie,Aegean Blue,MISSING
-PALESTINE,palestine-hoodie,Hoodie,Iron Grey,MISSING
+PALESTINE,palestine-hoodie,Hoodie,Black,OK
+PALESTINE,palestine-hoodie,Hoodie,Purple,OK
+PALESTINE,palestine-hoodie,Hoodie,Aegean Blue,OK
+PALESTINE,palestine-hoodie,Hoodie,Iron Grey,OK
 PALESTINE,palestine-hoodie,Hoodie,Offwhite,NO VARIANT
-PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Black,MISSING
-PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Purple,MISSING
-PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Aegean Blue,MISSING
-PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Iron Grey,MISSING
+PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Black,OK
+PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Purple,OK
+PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Aegean Blue,OK
+PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Iron Grey,OK
 PERSONALITY DISORDER,personality-disorder-hoodie,Hoodie,Offwhite,NO VARIANT
 REALITY CALLED,reality-called-hoodie,Hoodie,Black,MISSING
 REALITY CALLED,reality-called-hoodie,Hoodie,Offwhite,MISSING
@@ -344,11 +344,11 @@ ROCK . PAPER . LIQUOR,rock-paper-liquor-hoodie,Hoodie,Offwhite,MISSING
 ROCK . PAPER . LIQUOR,rock-paper-liquor-hoodie,Hoodie,Purple,MISSING
 ROCK . PAPER . LIQUOR,rock-paper-liquor-hoodie,Hoodie,Aegean Blue,MISSING
 ROCK . PAPER . LIQUOR,rock-paper-liquor-hoodie,Hoodie,Iron Grey,MISSING
-ROLEX,rolex-hoodie,Hoodie,Black,MISSING
-ROLEX,rolex-hoodie,Hoodie,Offwhite,MISSING
-ROLEX,rolex-hoodie,Hoodie,Purple,MISSING
-ROLEX,rolex-hoodie,Hoodie,Aegean Blue,MISSING
-ROLEX,rolex-hoodie,Hoodie,Iron Grey,MISSING
+ROLEX,rolex-hoodie,Hoodie,Black,OK
+ROLEX,rolex-hoodie,Hoodie,Offwhite,OK
+ROLEX,rolex-hoodie,Hoodie,Purple,OK
+ROLEX,rolex-hoodie,Hoodie,Aegean Blue,OK
+ROLEX,rolex-hoodie,Hoodie,Iron Grey,OK
 SHIT,shit-hoodie,Hoodie,Black,MISSING
 SHIT,shit-hoodie,Hoodie,Offwhite,MISSING
 SHIT,shit-hoodie,Hoodie,Purple,MISSING
@@ -384,13 +384,13 @@ WESUNCLE,uncle-wes-hoodie,Hoodie,Offwhite,MISSING
 WESUNCLE,uncle-wes-hoodie,Hoodie,Purple,MISSING
 WESUNCLE,uncle-wes-hoodie,Hoodie,Aegean Blue,MISSING
 WESUNCLE,uncle-wes-hoodie,Hoodie,Iron Grey,MISSING
-WTF,wtf-hoodie,Hoodie,Black,MISSING
+WTF,wtf-hoodie,Hoodie,Black,OK
 WTF,wtf-hoodie,Hoodie,Offwhite,MISSING
-WTF,wtf-hoodie,Hoodie,Purple,MISSING
-WTF,wtf-hoodie,Hoodie,Aegean Blue,MISSING
-WTF,wtf-hoodie,Hoodie,Iron Grey,MISSING
+WTF,wtf-hoodie,Hoodie,Purple,OK
+WTF,wtf-hoodie,Hoodie,Aegean Blue,OK
+WTF,wtf-hoodie,Hoodie,Iron Grey,OK
 ADHD,adhd-sweatshirt,Sweatshirt,Black,MISSING
-ADHD,adhd-sweatshirt,Sweatshirt,Offwhite,MISSING
+ADHD,adhd-sweatshirt,Sweatshirt,Offwhite,OK
 ADHD,adhd-sweatshirt,Sweatshirt,Dark Green,MISSING
 ADHD,adhd-sweatshirt,Sweatshirt,Dark Blue,MISSING
 ADHD,adhd-sweatshirt,Sweatshirt,Beetroot Purple,MISSING
@@ -542,10 +542,10 @@ ILLEGAL,illegal-sweatshirt,Sweatshirt,Offwhite,NO VARIANT
 JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Black,OK
 JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Offwhite,MISSING
 JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Dark Green,OK
-JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Dark Blue,MISSING
-JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Beetroot Purple,MISSING
+JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Dark Blue,OK
+JUDGEMENTAL,im-not-judgemantal-sweatshirt,Sweatshirt,Beetroot Purple,OK
 INTO-RESTING,into-resting-sweatshirt,Sweatshirt,Black,OK
-INTO-RESTING,into-resting-sweatshirt,Sweatshirt,Offwhite,MISSING
+INTO-RESTING,into-resting-sweatshirt,Sweatshirt,Offwhite,OK
 INTO-RESTING,into-resting-sweatshirt,Sweatshirt,Dark Green,OK
 INTO-RESTING,into-resting-sweatshirt,Sweatshirt,Dark Blue,OK
 INTO-RESTING,into-resting-sweatshirt,Sweatshirt,Beetroot Purple,OK
@@ -559,10 +559,10 @@ JOMO,jomo-sweatshirt,Sweatshirt,Offwhite,MISSING
 JOMO,jomo-sweatshirt,Sweatshirt,Dark Green,PARTIAL
 JOMO,jomo-sweatshirt,Sweatshirt,Dark Blue,PARTIAL
 JOMO,jomo-sweatshirt,Sweatshirt,Beetroot Purple,MISSING
-KILL BIC,kill-bic-sweatshirt,Sweatshirt,Black,MISSING
+KILL BIC,kill-bic-sweatshirt,Sweatshirt,Black,OK
 KILL BIC,kill-bic-sweatshirt,Sweatshirt,Dark Green,OK
-KILL BIC,kill-bic-sweatshirt,Sweatshirt,Dark Blue,MISSING
-KILL BIC,kill-bic-sweatshirt,Sweatshirt,Beetroot Purple,MISSING
+KILL BIC,kill-bic-sweatshirt,Sweatshirt,Dark Blue,OK
+KILL BIC,kill-bic-sweatshirt,Sweatshirt,Beetroot Purple,OK
 KILL BIC,kill-bic-sweatshirt,Sweatshirt,Offwhite,NO VARIANT
 ⁠LED ZEP,led-zep-sweatshirt,Sweatshirt,Black,MISSING
 ⁠LED ZEP,led-zep-sweatshirt,Sweatshirt,Offwhite,MISSING
@@ -629,7 +629,7 @@ PARANOID,paranoid-sweatshirt,Sweatshirt,Dark Green,OK
 PARANOID,paranoid-sweatshirt,Sweatshirt,Dark Blue,PARTIAL
 PARANOID,paranoid-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
 PARANOID,paranoid-sweatshirt,Sweatshirt,Offwhite,NO VARIANT
-PROS & CONS,pros-cons-sweatshirt,Sweatshirt,Black,MISSING
+PROS & CONS,pros-cons-sweatshirt,Sweatshirt,Black,OK
 PROS & CONS,pros-cons-sweatshirt,Sweatshirt,Dark Green,PARTIAL
 PROS & CONS,pros-cons-sweatshirt,Sweatshirt,Dark Blue,PARTIAL
 PROS & CONS,pros-cons-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
@@ -665,10 +665,10 @@ SUCKERS,suckers-sweatshirt,Sweatshirt,Dark Green,PARTIAL
 SUCKERS,suckers-sweatshirt,Sweatshirt,Dark Blue,OK
 SUCKERS,suckers-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
 NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Black,OK
-NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Offwhite,MISSING
+NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Offwhite,OK
 NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Dark Green,OK
-NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Dark Blue,MISSING
-NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Beetroot Purple,MISSING
+NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Dark Blue,OK
+NICEST ASSHOLE,the-nicest-asshole-sweatshirt,Sweatshirt,Beetroot Purple,OK
 The ROLLING EYES,the-rolling-eyes-sweatshirt,Sweatshirt,Black,PARTIAL
 The ROLLING EYES,the-rolling-eyes-sweatshirt,Sweatshirt,Offwhite,PARTIAL
 The ROLLING EYES,the-rolling-eyes-sweatshirt,Sweatshirt,Dark Green,PARTIAL
@@ -676,8 +676,8 @@ The ROLLING EYES,the-rolling-eyes-sweatshirt,Sweatshirt,Dark Blue,PARTIAL
 The ROLLING EYES,the-rolling-eyes-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
 TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Black,PARTIAL
 TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Dark Green,PARTIAL
-TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Dark Blue,MISSING
-TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Beetroot Purple,MISSING
+TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Dark Blue,OK
+TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Beetroot Purple,OK
 TRANS-PARENT,trans-parent-sweatshirt,Sweatshirt,Offwhite,NO VARIANT
 TRUST THE PROCESS,trust-the-process-sweatshirt,Sweatshirt,Black,OK
 TRUST THE PROCESS,trust-the-process-sweatshirt,Sweatshirt,Offwhite,OK
@@ -685,7 +685,7 @@ TRUST THE PROCESS,trust-the-process-sweatshirt,Sweatshirt,Dark Green,OK
 TRUST THE PROCESS,trust-the-process-sweatshirt,Sweatshirt,Dark Blue,PARTIAL
 TRUST THE PROCESS,trust-the-process-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
 VEGANISM,veganism-sweatshirt,Sweatshirt,Black,MISSING
-VEGANISM,veganism-sweatshirt,Sweatshirt,Offwhite,MISSING
+VEGANISM,veganism-sweatshirt,Sweatshirt,Offwhite,OK
 VEGANISM,veganism-sweatshirt,Sweatshirt,Dark Green,MISSING
 VEGANISM,veganism-sweatshirt,Sweatshirt,Dark Blue,PARTIAL
 VEGANISM,veganism-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
@@ -697,7 +697,7 @@ WISH YOU WERE BEER,wish-you-were-beer-sweatshirt,Sweatshirt,Beetroot Purple,PART
 WORD FILTER,word-filter-sweatshirt,Sweatshirt,Black,PARTIAL
 WORD FILTER,word-filter-sweatshirt,Sweatshirt,Offwhite,PARTIAL
 WORD FILTER,word-filter-sweatshirt,Sweatshirt,Dark Green,PARTIAL
-WORD FILTER,word-filter-sweatshirt,Sweatshirt,Dark Blue,MISSING
+WORD FILTER,word-filter-sweatshirt,Sweatshirt,Dark Blue,OK
 WORD FILTER,word-filter-sweatshirt,Sweatshirt,Beetroot Purple,PARTIAL
 MIDDLE FINGERS,middle-fingers-sweatshirt,Sweatshirt,Black,OK
 MIDDLE FINGERS,middle-fingers-sweatshirt,Sweatshirt,Offwhite,OK
@@ -736,7 +736,7 @@ ROCK . PAPER . LIQUOR,rock-paper-liquor-sweatshirt,Sweatshirt,Dark Blue,OK
 ROCK . PAPER . LIQUOR,rock-paper-liquor-sweatshirt,Sweatshirt,Beetroot Purple,OK
 ROLEX,rolex-sweatshirt,Sweatshirt,Black,OK
 ROLEX,rolex-sweatshirt,Sweatshirt,Offwhite,OK
-ROLEX,rolex-sweatshirt,Sweatshirt,Dark Green,MISSING
+ROLEX,rolex-sweatshirt,Sweatshirt,Dark Green,OK
 ROLEX,rolex-sweatshirt,Sweatshirt,Dark Blue,OK
 ROLEX,rolex-sweatshirt,Sweatshirt,Beetroot Purple,OK
 SHIT,shit-sweatshirt,Sweatshirt,Black,OK
