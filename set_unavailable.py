@@ -22,7 +22,8 @@ RULES = {  # product handle -> colours to take off sale
     **{f"{d}-{s}": LIGHT for d in ["capitalism", "my-therapist"] for s in ("hoodie", "sweatshirt")},
 }
 # Owner asked (28 Nov) to remove these even though they have a photo: applied regardless of `shot`.
-FORCE = {"veganism-hoodie": ["Purple"], "veganism-sweatshirt": ["Dark Blue"]}
+FORCE = {"veganism-hoodie": ["Purple"], "veganism-sweatshirt": ["Dark Blue"],
+         "diet-joke-hoodie": DARK, "diet-joke-sweatshirt": DARK}  # owner 28 Nov: Diet Joke Offwhite only
 for h, cols in FORCE.items():
     RULES[h] = sorted(set(RULES.get(h, [])) | set(cols))
 Q = """query($h:String!){ productByHandle(handle:$h){ id title variants(first:100){ nodes{ id title
